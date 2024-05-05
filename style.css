@@ -1,15 +1,16 @@
-#nav-head {
+
+
+#nav-head{
     width: 100vw;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.927);
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-left: -8px;
-
 }
 
-#globe {
+#globe{
     display: flex;
     flex-direction: row;
     border: 2px solid transparent;
@@ -24,7 +25,7 @@
 }
 
 
-#txt-globe {
+#txt-globe{
     font-size: 16px;
     color: white;
     margin: 3px 0px 0px 5px;
@@ -47,16 +48,17 @@
 }
 
 
-#txt-globe:hover {
+#txt-globe:hover{
     color: #ed1c24;
 }
 
 
-#nav-global {
+
+#nav-global{
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 30px;
-
+    
 }
 
 @media(max-width: 1150px) {
@@ -64,10 +66,11 @@
         margin-left: 40px;
 
     }
+
 }
 
 
-#nav-line {
+#nav-line{
     color: white;
     display: flex;
     align-items: center;
@@ -75,8 +78,8 @@
     margin-left: 20px;
 }
 
-@media(max-width: 490px) {
-    #nav-line {
+@media(max-width: 490px){
+    #nav-line{
         margin-left: 7px;
 
     }
@@ -92,13 +95,13 @@
 }
 
 
-#nav-img {
+#nav-img{
     width: 28px;
     height: 18.67px;
     background-image: url("ind-flag.webp");
     background-size: cover;
     margin-left: 45px;
-
+    
 }
 
 @media(max-width: 1150px) {
@@ -110,7 +113,7 @@
 }
 
 
-#nav-location {
+#nav-location{
     color: #FFFFFF;
     text-decoration: none;
     display: flex;
@@ -119,12 +122,11 @@
 
 }
 
-#nav-domestic {
+#nav-domestic{
     margin: 3px 0px 0px 5px;
 
 }
-
-#nav-domestic:hover {
+#nav-domestic:hover{
     color: #ed1c24;
 }
 
@@ -144,7 +146,8 @@
 }
 
 
-#nav-service {
+
+#nav-service{
     width: 177px;
     height: 55px;
     background-color: #ed1c24;
@@ -155,16 +158,15 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-
+    
 }
 
-@media (max-width : 490px) {
-    #nav-service {
+@media (max-width : 490px){
+    #nav-service{
         right: 30px;
     }
 
 }
-
 
 @media(max-width: 490px) {
     #nav-service {
@@ -175,7 +177,7 @@
 @media (max-width : 360px) {
     #nav-service {
         width: 120px;
-        right: 20px;
+        /* right: 20px; */
     }
 
 }
@@ -193,13 +195,14 @@
     }
 }
 
-#nav-service:hover {
+
+
+#nav-service:hover{
     background-color: white;
     color: grey;
 }
 
-
-#txt-service {
+#txt-service{
     font-size: 14px;
     margin-left: 10px;
     justify-content: center;
@@ -214,17 +217,18 @@
 
 /* main css code starts here */
 
-#body-section {
+#body-section{
     height: 140px;
     width: 100vw;
     background-color: white;
     position: sticky;
     top: -1px;
     padding-top: 20px;
+    /* box-shadow: 2px 2px 2px  inset  grey ; */
 }
 
-@media(max-width:1200px) {
-    #body-section {
+@media(max-width:1200px){
+    #body-section{
         height: 100px;
     }
 }
@@ -237,7 +241,7 @@
 
 
 
-#varuna-logo {
+#varuna-logo{
     width: 200px;
     height: 173px;
     background-image: url("main-logo.png");
@@ -246,65 +250,68 @@
     position: absolute;
     top: 50px;
     left: 50px;
-
+    
 
 }
 
-@media(max-width:1200px) {
-    #varuna-logo {
+@media(max-width:1200px){
+    #varuna-logo{
         width: 120px;
         height: 80px;
         top: 30px;
         left: 3px;
     }
 }
+/* @media(min-width:1200px){
+    #varuna-logo{
+        width: 120px;
+        height: 80px;
+        top: 10px;
+        left: 3px;
+    }
+} */
 
 
-#main-logo {
+#main-logo{
     width: 196px;
     height: 60px;
     opacity: 0;
 
 }
-
-@media(min-width:370px) {
-    #main-logo {
+@media(min-width:370px){
+    #main-logo{
         width: 170px;
     }
 }
 
 
-#nav-menu {
+#nav-menu{
     display: flex;
     flex-direction: row;
     margin-left: 400px;
     gap: 25px;
     padding-top: 20px;
 }
-
-@media(max-width: 1201px) {
-    #nav-menu {
+@media(max-width: 1201px){
+    #nav-menu{
         display: none;
     }
 }
 
-
-
-.menu-select {
+.menu-select{
     border: 0px transparent;
     font-size: 17px;
     text-decoration: none;
     color: #000000;
     background-color: transparent;
-
 }
 
-.menu-select:hover {
+.menu-select:hover{
     color: #ed1c24;
 }
 
 
-.menu-contact {
+.menu-contact{
     text-decoration: none;
     font-size: 17px;
     color: #000000;
@@ -313,39 +320,33 @@
     margin-top: 20px;
     margin-left: 505px;
     border: transparent;
-    background-color: transparent;
 }
+@media(max-width: 1201px){
+    .menu-contact{
 
-
-
-@media(max-width: 1201px) {
-    .menu-contact {
         display: none;
-
-
     }
 }
 
 
-@media(max-width: 800px) {
-    .menu-select {
+@media(max-width: 800px){
+    .menu-select{
+        /* opacity: 0; */
         display: none;
-
     }
-}
+} 
 
 
 
-#contact-icon {
+#contact-icon{
     display: flex;
     flex-direction: row-reverse;
     margin-right: 150px;
     margin-top: -60px;
     font-size: 20px;
 }
-
-@media(max-width:1200px) {
-    #contact-icon {
+@media(max-width:1200px){
+    #contact-icon{
         margin-top: 30px;
     }
 }
@@ -357,18 +358,18 @@
 }
 
 
-
-#search-icon {
+#search-icon{
     display: flex;
     flex-direction: row-reverse;
     margin-right: 95px;
+    
     margin-top: -28px;
     font-size: 23px;
 }
 
 
 
-#hamburger {
+#hamburger{
     display: flex;
     flex-direction: row-reverse;
     margin-right: 30px;
@@ -376,41 +377,118 @@
     margin-top: -27px;
 }
 
-@media(min-width:1200px) {
-    #hamburger {
+@media(min-width:1202px){
+    #hamburger{
         display: none;
     }
 }
 
 
-#images {
+#images{
     width: 100vw;
     height: 823px;
     background-size: contain;
     background-repeat: no-repeat;
-    animation: anim 15s ease-in infinite;
-
+    animation: anim  10s ease-in infinite;
+    
 }
 
-@keyframes anim {
-    0% {
+@keyframes anim{
+    0%{
         background-image: url(body-img1.png);
     }
-
-    50% {
+    50%{
         background-image: url(body-img2.png);
     }
-
-    75% {
+    75%{
         background-image: url(body-img3.png);
     }
-
-    100% {
+    100%{
         background-image: url(body-img4.png);
     }
 
 
 }
+#first-txt{
+    font-size: 22px;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nd2-txt{
+    font-size: 23px;
+    color: #ed1c24;
+    word-spacing: 10px;
+
+    
+}
+#rd3-txt{
+    font-size: 14px;
+    font-family: sans-serif;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+
+
+
+}
+#body-txt{
+    max-width: 600px;
+    margin-left: 45px;
+    margin-top: -200px;
+}
+
+@media(max-width:1300px){
+    #body-txt{
+        margin-top: -200px;
+    }
+}
+
+
+@media(max-width:1140px){
+    #body-txt{
+        margin-top: -300px;
+    }
+}
+@media(max-width:1000px){
+    #body-txt{
+        margin-top: -400px;
+    }
+}
+@media(max-width:900px){
+    #body-txt{
+        margin-top: -500px;
+    }
+}
+@media(max-width:800px){
+    #body-txt{
+        margin-top: -500px;
+    }
+}
+@media(max-width:700px){
+    #body-txt{
+        margin-top: -600px;
+    }
+}
+@media(max-width:600px){
+    #body-txt{
+        margin-top: -600px;
+    }
+}
+@media(max-width:500px){
+    #body-txt{
+        margin-top: -600px;
+    }
+}
+@media(max-width:400px){
+    #body-txt{
+        margin-top: -700px;
+    }
+}
+
+
+
+
+
 
 
 
@@ -418,7 +496,7 @@
 
 /* this code is for back to the top */
 
-#back-top {
+#back-top{
     position: sticky;
     background-color: #ed1c24;
     width: 30px;
@@ -429,46 +507,53 @@
     left: 1300px;
     bottom: 10px;
     border-radius: 5px;
+    
 }
 
-@media(min-width:1380px) {
-    #back-top {
+
+@media(min-width:1380px){
+    #back-top{
         left: 1350px;
     }
 }
 
-@media(min-width:1470px) {
-    #back-top {
+@media(min-width:1470px){
+    #back-top{
         left: 1420px;
     }
 }
 
-@media(min-width:1500px) {
-    #back-top {
+@media(min-width:1500px){
+    #back-top{
         left: 1460px;
     }
 }
 
-@media(min-width:1570px) {
-    #back-top {
+@media(min-width:1570px){
+    #back-top{
         left: 1510px;
     }
 }
 
-@media(min-width:1600px) {
-    #back-top {
+@media(min-width:1600px){
+    #back-top{
         left: 1560px;
     }
 }
 
-@media(min-width:1640px) {
-    #back-top {
+@media(min-width:1640px){
+    #back-top{
         left: 1610px;
     }
 }
 
-@media(min-width:1690px) {
-    #back-top {
+@media(min-width:1690px){
+    #back-top{
         left: 1660px;
     }
 }
+
+
+
+
+
