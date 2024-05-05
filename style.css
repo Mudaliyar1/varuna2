@@ -433,7 +433,7 @@
 }
 #body-txt{
     max-width: 800px;
-    margin-left: 45px;
+    margin-left: 30px;
     margin-top: -200px;
 }
 
@@ -498,9 +498,7 @@
 
 #back-top{
     position: sticky;
-/*     background-color: #ed1c24; */
-    background-color: green;
-    
+    background-color: #ed1c24;
     width: 30px;
     height: 30px;
     text-align: center;
