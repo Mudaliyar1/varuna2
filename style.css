@@ -498,7 +498,9 @@
 
 #back-top{
     position: sticky;
-    background-color: #ed1c24;
+/*     background-color: #ed1c24; */
+    background-color: green;
+    
     width: 30px;
     height: 30px;
     text-align: center;
