@@ -226,13 +226,21 @@
     color: black;
     border: 0px solid transparent;
     margin-top: -3px;
+
 }
 
 .btn , .btn-secondary, .dropdown-toggle:hover{
     background-color: transparent;
     border: 0px solid transparent;
     color: black;
+    
 }
+
+.btn:hover{
+    color: #ed1c24;
+}
+
+
 #body-section{
     height: 140px;
     width: 100vw;
