@@ -418,7 +418,6 @@
 #nd2-txt{
     font-size: 23px;
     color: #ed1c24;
-    color: red;
     word-spacing: 10px;
 
     
@@ -440,14 +439,14 @@
 
 @media(max-width:1300px){
     #body-txt{
-        margin-top: -200px;
+        margin-top: -400px;
     }
 }
 
 
 @media(max-width:1140px){
     #body-txt{
-        margin-top: -300px;
+        margin-top: -450px;
     }
 }
 @media(max-width:1000px){
