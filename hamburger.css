@@ -241,3 +241,21 @@
     color: black;
     background-color: transparent;
 }
+
+.sign{
+    width: 100px;
+    text-align: center;padding: 4px;
+    border-radius: 10px;
+    font-family: monospace;
+    background: linear-gradient(grey, wheat,grey);
+    /* background: linear-gradient( red,grey); */
+}
+
+#reg-log{
+    display: flex;
+    position: absolute;
+    left: 47%;
+    top: 80%;
+    gap: 10px;
+
+}
