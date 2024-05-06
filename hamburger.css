@@ -247,8 +247,11 @@
     text-align: center;padding: 4px;
     border-radius: 10px;
     font-family: monospace;
-    background: linear-gradient(grey, wheat,grey);
+    /* background: linear-gradient(grey, wheat,grey); */
     /* background: linear-gradient( red,grey); */
+    background-color: white;
+    color: red;
+    border: 1px solid black;
 }
 
 #reg-log{
