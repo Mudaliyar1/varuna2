@@ -248,7 +248,7 @@
     position: sticky;
     top: -1px;
     padding-top: 20px;
-    box-shadow: 2px 2px 2px   grey ;
+    box-shadow: 2px 2px 2px  grey ;
 }
 
 @media(max-width:1200px){
@@ -576,6 +576,38 @@
         left: 1660px;
     }
 }
+
+
+#read{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#read-more{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: -83px;
+}
+
+#circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    border-left: 2px solid transparent;
+    text-align: center;
+    align-items: center;
+}
+
+#circle:hover{
+    border: 2px solid black;
+    border-left: 2px solid transparent;
+    
+}
+
 
 
 
