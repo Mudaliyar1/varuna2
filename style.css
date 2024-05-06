@@ -248,7 +248,7 @@
     position: sticky;
     top: -1px;
     padding-top: 20px;
-    /* box-shadow: 2px 2px 2px  inset  grey ; */
+    box-shadow: 2px 2px 2px   grey ;
 }
 
 @media(max-width:1200px){
