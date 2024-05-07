@@ -813,7 +813,7 @@
     border-radius: 30px;
 }
 
-.body-to-img:hover{
+.body-to-img:active{
     transform: scale(1.1,1.1);
 }
 
