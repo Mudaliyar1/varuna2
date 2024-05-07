@@ -713,6 +713,8 @@
     flex-grow: 1;
     flex-basis: 200;
     box-shadow: 0px 5px 5px grey;  
+    color: black;
+    text-decoration: none;
 }
 
 .three-divbox:hover{
@@ -749,20 +751,46 @@
 }
 
 #bod-icon{
-    position: relative;
-    top: 17%;
-    left: 10%;
+    margin-top: 30px;
+    margin-left: 50px;
+    
 }
 
 #bod-txt{
-    margin-top: 60px;
+    margin-top: 35px;
     margin-left: 30px;
     overflow: hidden;
     text-decoration: underline red ;
-    
-
 }
 
-.span-txt{
-    text-decoration: underline white;
+
+#infra-icon{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#infra-txt{
+    margin-top: 35px;
+    margin-left: 50px;
+    overflow: hidden;
+    text-decoration: underline red ;
+}
+
+#policy-icon{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#policy-txt{
+    margin-top: 35px;
+    margin-left: 50px;
+    overflow: hidden;
+    text-decoration: underline red ;
+}
+
+.three-txt{
+    color: #000000;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 17px;
 }
