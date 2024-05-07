@@ -712,7 +712,7 @@
 .three-divbox{
     flex-grow: 1;
     flex-basis: 200;
-    box-shadow: 0px 10px 5px grey;    
+    box-shadow: 0px 5px 5px grey;    
 }
 
 .three-divbox:hover{
@@ -736,6 +736,15 @@
     height: 267px;
     flex-grow: 0.4;
 
+}
+
+@media(max-width:580px)
+{
+    .divbox:nth-child(3){
+        width: 490px;
+        height: 267px;
+        flex-grow: 0.4;
+    }
 }
 
 #bod-icon{
