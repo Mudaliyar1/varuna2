@@ -262,3 +262,26 @@
     gap: 10px;
 
 }
+
+.shop-cart{
+    text-decoration: none;
+    margin-left: 10px;
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    gap: 10px;
+
+}
+
+.s-c{
+    text-decoration: none;
+    color: red;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
