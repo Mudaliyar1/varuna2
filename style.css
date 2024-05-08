@@ -514,71 +514,6 @@
 
 
 
-
-
-
-
-
-/* this code is for back to the top */
-
-#back-top{
-    position: sticky;
-    background-color: #ed1c24;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    align-content: center;
-    padding: 5px;
-    left: 1300px;
-    bottom: 10px;
-    border-radius: 5px;
-    
-}
-
-
-@media(min-width:1380px){
-    #back-top{
-        left: 1350px;
-    }
-}
-
-@media(min-width:1470px){
-    #back-top{
-        left: 1420px;
-    }
-}
-
-@media(min-width:1500px){
-    #back-top{
-        left: 1460px;
-    }
-}
-
-@media(min-width:1570px){
-    #back-top{
-        left: 1510px;
-    }
-}
-
-@media(min-width:1600px){
-    #back-top{
-        left: 1560px;
-    }
-}
-
-@media(min-width:1640px){
-    #back-top{
-        left: 1610px;
-    }
-}
-
-@media(min-width:1690px){
-    #back-top{
-        left: 1660px;
-    }
-}
-
-
 #read{
     display: flex;
     margin-top: 50px;
@@ -863,3 +798,231 @@
     align-items: center;
 
 }
+
+.body-3part{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.body-3txt{
+    flex-grow: 1;
+    flex-basis: 200;
+    margin-top: -30px;
+}
+
+#body-3txt{
+    max-width: 750px; 
+    /* margin: 20px; */
+}
+
+@media(max-width:1270px){
+    #body-3txt{
+        max-width: 750px;
+    }
+}
+@media(max-width:1200px){
+    #body-3txt{
+        max-width: 650px;
+    }
+}
+@media(max-width:1150px){
+    #body-3txt{
+        max-width: 600px;
+    }
+}
+@media(max-width:1100px){
+    #body-3txt{
+        max-width: 570px;
+    }
+}
+@media(max-width:1050px){
+    #body-3txt{
+        max-width: 530px;
+    }
+}
+@media(max-width:1000px){
+    #body-3txt{
+        max-width: 490px;
+    }
+}
+@media(max-width:950px){
+    #body-3txt{
+        max-width: 430px;
+    }
+}
+@media(max-width:900px){
+    #body-3txt{
+        max-width: 400px;
+    }
+}
+@media(max-width:850px){
+    #body-3txt{
+        max-width: 370px;
+    }
+}
+@media(max-width:800px){
+    #body-3txt{
+        max-width: 750px;
+    }
+}
+
+
+
+
+#body-3img{
+    height: 200px; 
+    width: 350px; 
+    /* margin: 20px; */
+    margin-left: 2%;
+    margin-top: -50px;
+}
+@media(max-width:1270px){
+    #body-3img{
+            margin-left: 10%;
+            height: 150px;
+            width: 270px;
+    }
+}
+@media(max-width:1200px){
+    #body-3img{
+            margin-left: 20%;
+            margin-top: -35px;
+    }
+}
+@media(max-width:1150px){
+    #body-3img{
+            margin-left: 27%;
+            margin-top: -30px;
+
+    }
+}
+@media(max-width:1100px){
+    #body-3img{
+            margin-left: 25%;
+            margin-top: -30px;
+
+    }
+}
+@media(max-width:1050px){
+    #body-3img{
+            margin-left: 23%;
+            margin-top: -25px;
+
+    }
+}
+@media(max-width:1000px){
+    #body-3img{
+            margin-left: 20%;
+            margin-top: -30px;
+
+    }
+}
+@media(max-width:950px){
+    #body-3img{
+            margin-left: 17%;
+            margin-top: -25px;
+
+    }
+}
+@media(max-width:900px){
+    #body-3img{
+            margin-left: 17%;
+            margin-top: -20px;
+
+    }
+}
+@media(max-width:850px){
+    #body-3img{
+            margin-left: 15%;
+            margin-top: -20px;
+
+    }
+}
+@media(max-width:800px){
+    #body-3img{
+            margin-left: 15%;
+            margin-top: 40px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this code is for back to the top */
+
+#back-top{
+    position: sticky;
+    background-color: #ed1c24;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    left: 1200px;
+    bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+
+@media(min-width:1380px){
+    #back-top{
+        left: 1350px;
+    }
+}
+
+@media(min-width:1470px){
+    #back-top{
+        left: 1420px;
+    }
+}
+
+@media(min-width:1500px){
+    #back-top{
+        left: 1460px;
+    }
+}
+
+@media(min-width:1570px){
+    #back-top{
+        left: 1510px;
+    }
+}
+
+@media(min-width:1600px){
+    #back-top{
+        left: 1560px;
+    }
+}
+
+@media(min-width:1640px){
+    #back-top{
+        left: 1610px;
+    }
+}
+
+@media(min-width:1690px){
+    #back-top{
+        left: 1660px;
+    }
+}
+
