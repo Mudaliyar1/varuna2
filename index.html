@@ -280,7 +280,7 @@
           let intial_count = 0;
           const final_count = counter.dataset.count;
 
-         const counting = setInterval(updateCounting, 1);
+         const counting = setInterval(updateCounting, 20);
           
           function updateCounting(){
 
@@ -289,8 +289,8 @@
             counter.innerText = intial_count;
 
             }
-            if(intial_count >= 900){
-              intial_count += 10;
+            if(intial_count >= 100){
+              intial_count += 0;
             counter.innerText = intial_count  + '+' + '' +'motor & Pumps';
 
             }
