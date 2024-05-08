@@ -263,66 +263,63 @@
 
             <div id="body2-txt">
 
-                <div class="body-item" id="body-item1" data-count="1000" ddddd ><span style="font-size: 17px; font-weight: 570; color: white;">Motors and Pumps</span></div>
-                <div class="body-item" id="body-item2" data-count="85">0<span style="font-size: 17px; font-weight: 570; color: white;">Years of legacy</span></div>
-                <div class="body-item" id="body-item3" data-count="55">0<span style="font-size: 17px; font-weight: 570; color: white;">Countries</span></div>
-                <div class="body-item" id="body-item4" data-count="3">0<span style="font-size: 17px; font-weight: 570; color: white;">Produced per minute</span></div>
+                <div class="body-item" id="body-item1"  >0
+                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Motors and Pumps</span> -->
+                </div>
+                <div class="body-item" id="body-item2" >0
+                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Years of legacy</span> -->
+                </div>
+                <div class="body-item" id="body-item3" >0
+                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Countries</span> -->
+                </div>
+                <div class="body-item" id="body-item4" >0
+                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Produced per minute</span> -->
+                </div>
 
             </div>
        </div>
 
        <script>
-
-        const counters = document.querySelectorAll(".body-item");
-
-        counters.forEach(counter=>{
-
-          let intial_count = 0;
-          const final_count = counter.dataset.count;
-
-         const counting = setInterval(updateCounting, 20);
-          
-          function updateCounting(){
-
-            if(intial_count < 1000){
-              intial_count += 5;
-            counter.innerText = intial_count;
-
-            }
-            if(intial_count >= 100){
-              intial_count += 0;
-            counter.innerText = intial_count  + '+' + '' +'motor & Pumps';
-
-            }
-            if(intial_count <= 86){
-              intial_count += 0;
-            counter.innerText = intial_count  +  'years of legacy';
-
-            }
-            
-            if(intial_count <= 55){
-              intial_count += 0;
-            counter.innerText = intial_count  +  '+' +'Countries'
-
-            }
-            if(intial_count <=50){
-              intial_count += 0;
-            counter.innerText = intial_count  +  'Pumps'
-
-            }
-            
-            
-            if(intial_count >= final_count){
-              clearInterval(counting);
-            }
-
-            
-          }
-          
-        })
-
-     </script>
-
+        let count1 = 0; // starting number for counter1
+    let count2 = 0; // starting number for counter2
+    let count3 = 0; // starting number for counter3
+    let count4 = 0; // starting number for counter4
+    
+    const counter1Element = document.getElementById("body-item1");
+    const counter2Element = document.getElementById("body-item2");
+    const counter3Element = document.getElementById("body-item3");
+    const counter4Element = document.getElementById("body-item4");
+    
+    setInterval(function() {
+      if (count1 < 1000) {
+        count1 += 5; // increment by 1-5 every 1 second
+        counter1Element.textContent = count1.toLocaleString() +"+"+ " "+"Motors"+"\n"+"Pumps";
+      }
+    }, 10); // increment every 10 milliseconds
+    
+    setInterval(function() {
+      if (count2 < 85) {
+        count2 += 1; // increment by 1-5 every 1 second
+        counter2Element.textContent = count2.toLocaleString() + " " + "Years of legacy";
+      }
+    }, 25); // increment every 10 milliseconds
+    
+    setInterval(function() {
+      if (count3 < 55) {
+        count3 += 1; // increment by 1-5 every 1 second
+        counter3Element.textContent = count3.toLocaleString() + "+" + " "+ "Countries";
+      }
+    }, 34); // increment every 10 milliseconds
+    
+    setInterval(function() {
+      if (count4 < 3) {
+        count4 += 1; // increment by 1-5 every 1 second
+        counter4Element.textContent = count4.toLocaleString() + " "+"Pumps"+"\n"+"Produced per minutes";
+      }
+    }, 600); // increment every 10 milliseconds
+    </script>
+    
+       
 
 
        <div id="three-box">
