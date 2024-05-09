@@ -1025,6 +1025,18 @@
     }
     
 }
+@media (max-width: 1180px) {
+    .body4-div4{
+        height: 530px;
+    }
+    
+}
+@media (max-width: 1100px) {
+    .body4-div4{
+        height: 500px;
+    }
+    
+}
 
 .body4-imgtxt{
     flex-grow: 1;
