@@ -980,6 +980,62 @@
 
 
 
+#body-4part{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(211, 211, 211, 0.21);
+    margin-top: 90px;
+}
+
+#body4-3txt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* padding-top: 70px; */
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1000px){
+    #body4-3txt{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+.body4-div4{
+    flex-grow: 0.5;
+    flex-basis: 100;
+    background-color: white;
+    height: 349px;
+    width: 407px;
+    gap: 50px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 7px grey;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 440px) {
+    .body4-div4{
+        height: 500px;
+    }
+    
+}
+
+.body4-imgtxt{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+
+
+
+
+
 
 
 
