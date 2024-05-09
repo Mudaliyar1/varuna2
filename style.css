@@ -1021,20 +1021,10 @@
 }
 
 .body4-div4:hover{
-    animation: spread   2s ease  ;
+    background-color: red;
     color: white;
+    transition: all 2s ease ;
 
-}
-@keyframes spread{
-    0%{
-        transform: translateZ(0%);
-        background-color: transparent;
-    }
-    100%{
-        transform: translateZ(100%);
-        background-color: red;
-
-    }
 }
 
 @media (max-width: 440px) {
