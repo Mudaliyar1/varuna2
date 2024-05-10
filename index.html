@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
+
 <body>
-    
-
-    
-    <!-- header code starts from here -->
-
-    <header id="nav-head">
-
-        <div id="globe">
-            <a href="global-head.html" id="nav-global"><i class="fa-solid fa-earth-asia" style="font-size: 23px;"></i></a>
-            <a href="global-head.html" id="txt-globe">Global</a>
-        </div>
-
-        <div id="nav-line">
-            <i class="fa-solid fa-grip-lines-vertical" style="margin-left: 23px;"></i>
-        </div>
-
-        <a href="index.html" id="nav-location"> 
-            <div id="nav-img">   </div>
-            <p id="nav-domestic">Domestic</p>
-        </a>
 
 
-        <a href="service-locator.html" id="nav-service">
-            <i class="fa-solid fa-location-dot" style="font-size: 20px;"></i>
-            <p id="txt-service">Service Locator</p>
-        </a>
 
-    </header>
+  <!-- header code starts from here -->
 
-    <section id="body-section">
+  <header id="nav-head">
 
-        <div id="varuna-logo">
-            <a href="index.html"><img src="main-logo.png" id="main-logo" alt="" ></a>
-        </div>
+    <div id="globe">
+      <a href="global-head.html" id="nav-global"><i class="fa-solid fa-earth-asia" style="font-size: 23px;"></i></a>
+      <a href="global-head.html" id="txt-globe">Global</a>
+    </div>
 
-        <nav id="nav-menu">
+    <div id="nav-line">
+      <i class="fa-solid fa-grip-lines-vertical" style="margin-left: 23px;"></i>
+    </div>
 
-            <p class="menu-select">
-                <a href="index.html" class="menu-select">Home</a>
-            </p>
+    <a href="index.html" id="nav-location">
+      <div id="nav-img"> </div>
+      <p id="nav-domestic">Domestic</p>
+    </a>
 
-            
-            <!-- <select name="menu" class="menu-select">
+
+    <a href="service-locator.html" id="nav-service">
+      <i class="fa-solid fa-location-dot" style="font-size: 20px;"></i>
+      <p id="txt-service">Service Locator</p>
+    </a>
+
+  </header>
+
+  <section id="body-section">
+
+    <div id="varuna-logo">
+      <a href="index.html"><img src="main-logo.png" id="main-logo" alt=""></a>
+    </div>
+
+    <nav id="nav-menu">
+
+      <p class="menu-select">
+        <a href="index.html" class="menu-select">Home</a>
+      </p>
+
+
+      <!-- <select name="menu" class="menu-select">
                 <option value="about"><a href="about-varuna.html">About Varuna</a></option>
                 <option value="about us"><a href="hamburger.html">About us</a></option>
             </select>
@@ -76,510 +83,703 @@
                 <option value="media"><a href="media.html">Media</a></option>
             </select> -->
 
-            <!-- dropdown list from bootstrap -->
-
-           
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About varuna
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="about-company.html">About us</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="company-policy.html">Conmpany Policies</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Products</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Borewell Submersible <br> Pumps</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Openwell Submersible <br> Pumps</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Centrifugal Monoblock <br> Pumps</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Energy Efficent-Induction <br> Mototrs</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Centrifugal Regenerative <br> Self Priming Pumps</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Solar Pumping System</a></li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Applications
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Agriculture</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Commercial</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Domestic / Residental</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Industrial</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Solar</a></li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Career
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Career</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Job Openings</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Life At Varuna</a></li>
-                </ul>
-              </div>
+      <!-- dropdown list from bootstrap -->
 
 
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Media
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Media</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Events</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">News</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Gallery</a></li>
-                </ul>
-              </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          About varuna
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="about-company.html">About us</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="company-policy.html">Conmpany Policies</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+        </ul>
+      </div>
 
-            <p class="menu">
-                <a href="csr.html" class="menu-select">CSR</a>
-            </p>
-          
-        </nav>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Products
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="products/Products.html">Products</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="products/Borewell Submersible.html">Borewell Submersible <br> Pumps</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="products/Openwell Submersible.html">Openwell Submersible <br> Pumps</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="products/Centrifugal Monoblock.html">Centrifugal Monoblock <br> Pumps</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="products/Energy Efficent-Induction.html">Energy Efficent-Induction <br> Mototrs</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="products/Centrifugal Regenerative.html">Centrifugal Regenerative <br> Self Priming Pumps</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="products/Solar Pumping System.html">Solar Pumping System</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Applications
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Application/Agriculture.html">Agriculture</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="Application/Commercial.html">Commercial</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="Application/Domestic&residental.html">Domestic / Residental</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="Application/Industrial.html">Industrial</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="Application/Solar.html">Solar</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Career
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="career/Career.html">Career</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="career/Job-openings.html">Job Openings</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="career/Life-at-varuna.html">Life At Varuna</a></li>
+        </ul>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Media
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="media/Media.html">Media</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="media/Events.html">Events</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="media/News.html">News</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="media/Gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+      <p class="menu">
+        <a href="csr.html" class="menu-select">CSR</a>
+      </p>
+
+    </nav>
 
 
 
-        <div class="menu-contact">
-            <!-- <select name="menu" class="menu-contact">
+    <div class="menu-contact">
+      <!-- <select name="menu" class="menu-contact">
                 <option value=""><a href="contact.html" class="menu-contact">Contact</a></option>
             </select> -->
 
-            <!-- dropdown list from bootstrap -->
+      <!-- dropdown list from bootstrap -->
 
-        <p style="margin-right: 30px;"><a href="login.html" style="text-decoration: none; color: black;">Login</a></p>
-        
-        <p style="margin-right: 30px;"><a href="register.html" style="text-decoration: none; color: black;">Register</a></p>
+      <p style="margin-right: 30px;"><a href="login.html" style="text-decoration: none; color: black;">Login</a></p>
 
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Addresses</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Service Center</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Complaint FOrm</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Warranty Registration</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Write To Us</a></li>
-                </ul>
-              </div>
-           </div>
+      <p style="margin-right: 30px;"><a href="register.html" style="text-decoration: none; color: black;">Register</a>
+      </p>
 
 
-        
-        <div id="contact-icon">
-            <a href="contact-page.html"><i class="fa-solid fa-phone-volume" style="color: grey;"></i></a>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Contact
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="contact/Contact.html">Contact</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="contact/Address.html">Addresses</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="contact/Service-center.html">Service Center</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="contact/Complaint-form.html">Complaint FOrm</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="contact/Warranty-registraion.html">Warranty Registration</a></li>
+          <hr>
+          <li><a class="dropdown-item" href="contact/Write-to-us.html">Write To Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div id="contact-icon">
+      <a href="contact-page.html"><i class="fa-solid fa-phone-volume" style="color: grey;"></i></a>
+    </div>
+
+    <div id="search-icon">
+      <a href="search.html"><i class="fa-solid fa-magnifying-glass" style="color: grey;"></i></a>
+    </div>
+
+
+    <div id="hamburger">
+      <a href="hamburger.html"><i class="fa-solid fa-bars" style="color: red;"></i></a>
+    </div>
+
+  </section>
+
+  <!-- section ends here -->
+
+
+
+  <!-- main starts from here -->
+
+  <main id="body-main">
+    <div id="images"></div>
+
+
+
+    <div id="body-txt">
+      <h2 id="first-txt">About Varuna Electric</h2>
+
+      <h2 id="nd2-txt">Commenced in Ahmedabad, Gujarat, by legendary industrialist Late Shri Laljibhai J. Gajjar, Varuna
+        Electric is a brand that fuels the innovative spirit and the noteworthy legacy that has undeniably defined us
+        for more than 80 years.
+      </h2>
+
+      <p id="rd3-txt">What started in 1935 with a unique hand blower, today, Varuna Electric has evolved into one of the
+        most reputed and globally acclaimed brands dealing in submersible pumps and open well motors. With a pan-India
+        presence of over 20 branches and 600+ distributors, export web spread across 50+ countries, and an annual
+        production capacity of over half a million pumps, we are just getting started and intend to set new benchmarks
+        with our pumping solutions. Having more than eight decades worth of experience in the industry, we have
+        genuinely earned the trust of our clients as well as employees with our stellar products and our constant
+        endeavor to uphold the highest quality standards.
+
+      </p>
+
+    </div>
+
+
+    <div id="read-more">
+      <a href="about-company.html" style="text-decoration: none; color: black; ">Read More</a>
+    </div>
+
+
+    <div id="read">
+      <a href="about-company.html">
+        <div id="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div>
+      </a>
+    </div>
+
+
+    <div id="body-grey">
+      <p id="body1-txt" style="color: white;">Leadership and solutions that <span style="color: red;">drive
+          results</span></p>
+
+      <div id="body2-txt">
+
+        <div class="body-item" id="body-item1">0
+          <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Motors and Pumps</span> -->
         </div>
-        
-        <div id="search-icon">
-            <a href="search.html"><i class="fa-solid fa-magnifying-glass" style="color: grey;"></i></a>
+        <div class="body-item" id="body-item2">0
+          <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Years of legacy</span> -->
+        </div>
+        <div class="body-item" id="body-item3">0
+          <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Countries</span> -->
+        </div>
+        <div class="body-item" id="body-item4">0
+          <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Produced per minute</span> -->
         </div>
 
+      </div>
+    </div>
 
-        <div id="hamburger">
-            <a href="hamburger.html"><i class="fa-solid fa-bars" style="color: red;"></i></a>
-        </div>
-        
-    </section>
+    <script>
+      let count1 = 0; // starting number for counter1
+      let count2 = 0; // starting number for counter2
+      let count3 = 0; // starting number for counter3
+      let count4 = 0; // starting number for counter4
 
-    <!-- section ends here -->
+      const counter1Element = document.getElementById("body-item1");
+      const counter2Element = document.getElementById("body-item2");
+      const counter3Element = document.getElementById("body-item3");
+      const counter4Element = document.getElementById("body-item4");
 
+      setInterval(function () {
+        if (count1 < 1000) {
+          count1 += 5; // increment by 1-5 every 1 second
+          counter1Element.textContent = count1.toLocaleString() + "+" + " " + "Motors" + "\n" + "Pumps";
+        }
+      }, 10); // increment every 10 milliseconds
 
+      setInterval(function () {
+        if (count2 < 85) {
+          count2 += 1; // increment by 1-5 every 1 second
+          counter2Element.textContent = count2.toLocaleString() + " " + "Years of legacy";
+        }
+      }, 25); // increment every 10 milliseconds
 
-    <!-- main starts from here -->
+      setInterval(function () {
+        if (count3 < 55) {
+          count3 += 1; // increment by 1-5 every 1 second
+          counter3Element.textContent = count3.toLocaleString() + "+" + " " + "Countries";
+        }
+      }, 34); // increment every 10 milliseconds
 
-    <main id="body-main">
-        <div id="images"></div>
-
-
-
-       <div id="body-txt">
-          <h2 id="first-txt">About Varuna Electric</h2>
-
-          <h2 id="nd2-txt">Commenced in Ahmedabad, Gujarat, by legendary industrialist Late Shri  Laljibhai J. Gajjar, Varuna Electric is a brand that fuels the innovative spirit and the   noteworthy legacy that has undeniably defined us for more than 80 years.
-          </h2>
-
-          <p id="rd3-txt">What started in 1935 with a unique hand blower, today, Varuna Electric has  evolved into one of the most reputed and globally acclaimed brands dealing in submersible  pumps and open well motors. With a pan-India presence of over 20 branches and 600+   distributors, export web spread across 50+ countries, and an annual production capacity of  over half a million pumps, we are just getting started and intend to set new benchmarks with   our pumping solutions. Having more than eight decades worth of experience in the industry,  we have genuinely earned the trust of our clients as well as employees with our stellar  products and our constant endeavor to uphold the highest quality standards.
-
-          </p>
-
-       </div>
-
-
-       <div id="read-more">
-          <a href="about-company.html" style="text-decoration: none; color: black; ">Read More</a> 
-       </div>
-
-
-       <div id="read"> 
-           <a href="about-company.html"><div id="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-       </div>
-
-
-       <div id="body-grey">
-           <p id="body1-txt" style="color: white;">Leadership and solutions that <span style="color: red;">drive results</span></p>
-
-            <div id="body2-txt">
-
-                <div class="body-item" id="body-item1"  >0
-                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Motors and Pumps</span> -->
-                </div>
-                <div class="body-item" id="body-item2" >0
-                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Years of legacy</span> -->
-                </div>
-                <div class="body-item" id="body-item3" >0
-                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Countries</span> -->
-                </div>
-                <div class="body-item" id="body-item4" >0
-                  <!-- <span style="font-size: 17px; font-weight: 570; color: white;">Produced per minute</span> -->
-                </div>
-
-            </div>
-       </div>
-
-       <script>
-        let count1 = 0; // starting number for counter1
-    let count2 = 0; // starting number for counter2
-    let count3 = 0; // starting number for counter3
-    let count4 = 0; // starting number for counter4
-    
-    const counter1Element = document.getElementById("body-item1");
-    const counter2Element = document.getElementById("body-item2");
-    const counter3Element = document.getElementById("body-item3");
-    const counter4Element = document.getElementById("body-item4");
-    
-    setInterval(function() {
-      if (count1 < 1000) {
-        count1 += 5; // increment by 1-5 every 1 second
-        counter1Element.textContent = count1.toLocaleString() +"+"+ " "+"Motors"+"\n"+"Pumps";
-      }
-    }, 10); // increment every 10 milliseconds
-    
-    setInterval(function() {
-      if (count2 < 85) {
-        count2 += 1; // increment by 1-5 every 1 second
-        counter2Element.textContent = count2.toLocaleString() + " " + "Years of legacy";
-      }
-    }, 25); // increment every 10 milliseconds
-    
-    setInterval(function() {
-      if (count3 < 55) {
-        count3 += 1; // increment by 1-5 every 1 second
-        counter3Element.textContent = count3.toLocaleString() + "+" + " "+ "Countries";
-      }
-    }, 34); // increment every 10 milliseconds
-    
-    setInterval(function() {
-      if (count4 < 3) {
-        count4 += 1; // increment by 1-5 every 1 second
-        counter4Element.textContent = count4.toLocaleString() + " "+"Pumps"+"\n"+"Produced per minutes";
-      }
-    }, 600); // increment every 10 milliseconds
+      setInterval(function () {
+        if (count4 < 3) {
+          count4 += 1; // increment by 1-5 every 1 second
+          counter4Element.textContent = count4.toLocaleString() + " " + "Pumps" + "\n" + "Produced per minutes";
+        }
+      }, 600); // increment every 10 milliseconds
     </script>
-    
-       
-
-
-       <div id="three-box">
-          <a href="bod.html" class="three-divbox divbox" > 
-            <div id="bod-icon"><img src="Board-of-director-icon.png" alt=""></div><h5 id="bod-txt">Board of Directors</h5>
-            <p class="three-txt">Our Board of Directors has a undeterred commitment to high standards of corporate governance.</p>
-          </a>
-
-          <a href="infrastructure.html" class="three-divbox divbox">
-            <div id="infra-icon"> <img src="Infrastructure-icon.png" alt=""></div><h5 id="infra-txt">Infrastructres</h5>
-            <p class="three-txt" style="margin-left: 45px;">We have a highly-equipped, techno- spirited and developed infrastructure mechanism.</p>
-          </a>
-
-          <a href="company-policy.html" class="three-divbox divbox">
-            <div id="policy-icon"> <img src="Policy-icon.png" alt=""></div><h5 id="policy-txt">Policy</h5>
-            <p class="three-txt" style="margin-left: 48px;">We enlist our policies in a very detailed, precise, and comprehensive manner.</p>
-          </a>
-       </div>
-
-
-       <div id="body-2txt">
-
-            <h3 style="text-align: center; color: red; margin-top: 40px; letter-spacing: 2px;">Industries We Serve</h3>
-
-            <p style="text-align: center; margin-top: 20px; font-size: 20px;">We at Varuna Electric cater to a wide range of business verticals and industries and not only <br> making a difference but leaving our impact across different sectors.
-            </p>
-
-
-         <div id="body-2img">
-              <div class="body-to-img" style="background-image: url(agriculture-img.webp); background-size: cover; border: 0.2px solid black;"><p class="body-imgtxt" style="color: black;">Agriculture</p>
-               
-                <p class="body-2para" style="color: white;">Reducing water shortage <span style="color: red;">problems in remote area</span></p>
-
-                <div class="read-more">
-                   <a href="agriculture.html" style="text-decoration: none; color: red; margin-top: 30px; font-weight: 800; font-size: 20px;">Read More</a> 
-                     <div class="read"> 
-                        <a href="agriculture.html"><div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                     </div>
-                 </div>
-        
-               </div>
-
-                <div class="body-to-img" style="background-image: url(Commercial-img.jpg); background-size: cover;  "><p class="body-imgtxt">Commercial</p>
-
-                  <p class="body-2para">Enfusing energy to the building <br>nation arround the world </p>
-
-                  <div class="read-more">
-  
-                     <a href="commercial.html" style="text-decoration: none; color: white; margin-top: 30px; font-weight: 800; font-size: 20px;">Read More</a> 
-                       <div class="read"> 
-                          <a href="commercial.html"><div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                       </div>
-           
-                   </div>
-  
-                
-                </div>
-
-
-                <div class="body-to-img" style="background-image: url(domestic&residential-img.webp); background-size: cover; "><p class="body-imgtxt">Domestic / <span style="color: red;">Residental</span></p>
-                
-                  <p class="body-2para" style="color: red;">For the urban and rural dwellers from high-rise buildings to independent homes</p>
-
-                  <div class="read-more">
-  
-                     <a href="dom&res.html" style="text-decoration: none; color: black; margin-top: 30px; font-weight: 800; font-size: 20px;">Read More</a> 
-                       <div class="read"> 
-                          <a href="dom&res.html"><div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                       </div>
-           
-                   </div>
-                
-                </div>
-
-
-                <div class="body-to-img" style="background-image: url(Industrial-img.webp); background-size: cover; "><p class="body-imgtxt" style="color: red;">Indu<span style="color: white;">strial</span></p>
-
-                  <p class="body-2para" style="color: white;">Using unstopable energy to drive the industries</p>
-
-                  <div class="read-more">
-  
-                     <a href="industrial.html" style="text-decoration: none; color: white; margin-top: 30px; font-weight: 800; font-size: 20px;">Read More</a> 
-                       <div class="read"> 
-                          <a href="industrial.html"><div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                       </div>
-           
-                   </div>
-                
-                </div>
 
 
 
-                <div class="body-to-img" style="background-image: url(solar-img.webp); background-size: cover; "><p class="body-imgtxt">Solar</p>
-                
 
-                  <p class="body-2para" style="color: red;"><span style="color: white;">Bringing the power of</span> sun to your service</p>
+    <div id="three-box">
+      <a href="bod.html" class="three-divbox divbox">
+        <div id="bod-icon"><img src="Board-of-director-icon.png" alt=""></div>
+        <h5 id="bod-txt">Board of Directors</h5>
+        <p class="three-txt">Our Board of Directors has a undeterred commitment to high standards of corporate
+          governance.</p>
+      </a>
 
-                  <div class="read-more">
-  
-                     <a href="solar.html" style="text-decoration: none; color: white; margin-top: 30px; font-weight: 800; font-size: 20px;">Read More</a> 
-                       <div class="read"> 
-                          <a href="solar.html"><div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                       </div>
-           
-                   </div>
-                
-                </div>
+      <a href="infrastructure.html" class="three-divbox divbox">
+        <div id="infra-icon"> <img src="Infrastructure-icon.png" alt=""></div>
+        <h5 id="infra-txt">Infrastructres</h5>
+        <p class="three-txt" style="margin-left: 45px;">We have a highly-equipped, techno- spirited and developed
+          infrastructure mechanism.</p>
+      </a>
 
-          </div>
-
-       </div>
-
-
-       <!-- helped by bac -->
-
-       <p style="color: red; text-align: center; margin-top: 50px;font-size: 25px;">Induction Motors</p>
+      <a href="company-policy.html" class="three-divbox divbox">
+        <div id="policy-icon"> <img src="Policy-icon.png" alt=""></div>
+        <h5 id="policy-txt">Policy</h5>
+        <p class="three-txt" style="margin-left: 48px;">We enlist our policies in a very detailed, precise, and
+          comprehensive manner.</p>
+      </a>
+    </div>
 
 
-       <div class="body-3part">
+    <div id="body-2txt">
 
-        <div class="body-3txt" id="body-3txt"><img src="body-3img.png" alt="" style="display: none;">Designed to fulfil the applications requiring high-performance levels and total reliability for a long time, the newly launched range of Varuna Electrics 3-phase induction motors are offered with Class F insulation and Temperature Rise limited to Class B for a long life. With ease of installation and low-cost power transmission units, our Induction Motors are highly energy efficient 3 phase motors and consume less power as opposed to traditional motors.
+      <h3 style="text-align: center; color: red; margin-top: 40px; letter-spacing: 2px;">Industries We Serve</h3>
+
+      <p style="text-align: center; margin-top: 20px; font-size: 20px;">We at Varuna Electric cater to a wide range of
+        business verticals and industries and not only <br> making a difference but leaving our impact across different
+        sectors.
+      </p>
+
+
+      <div id="body-2img">
+        <div class="body-to-img"
+          style="background-image: url(agriculture-img.webp); background-size: cover; border: 0.2px solid black;">
+          <p class="body-imgtxt" style="color: black;">Agriculture</p>
+
+          <p class="body-2para" style="color: white;">Reducing water shortage <span style="color: red;">problems in
+              remote area</span></p>
 
           <div class="read-more">
-            <a href="#" style="text-decoration: none; color: black; margin-top: -20px; font-weight: 500; font-size: 16px; margin-left: -30px;">Know More</a> 
-              <div class="read"> 
-                 <a href="#"><div class="circle" style="margin-top: -53px;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-              </div>
+            <a href="agriculture.html"
+              style="text-decoration: none; color: red; margin-top: 30px; font-weight: 800; font-size: 20px;">Read
+              More</a>
+            <div class="read">
+              <a href="agriculture.html">
+                <div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i>
+                </div>
+              </a>
+            </div>
           </div>
-        
+
         </div>
-        
-        <div class="body-3txt"><img src="body-3img.png" id="body-3img" alt="" ></div>
-       </div>
 
+        <div class="body-to-img" style="background-image: url(Commercial-img.jpg); background-size: cover;  ">
+          <p class="body-imgtxt">Commercial</p>
 
-      <!-- helped by bac  -->
-      
+          <p class="body-2para">Enfusing energy to the building <br>nation arround the world </p>
 
-      <div id="body-4part">
+          <div class="read-more">
 
-          <div id="body4-1txt"><h4 style="text-align: center; padding-top: 30px;">Our Market <span style="color: red;">Solutions</span>
-          </h4>
+            <a href="commercial.html"
+              style="text-decoration: none; color: white; margin-top: 30px; font-weight: 800; font-size: 20px;">Read
+              More</a>
+            <div class="read">
+              <a href="commercial.html">
+                <div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i>
+                </div>
+              </a>
+            </div>
+
           </div>
 
 
-          <div id="body4-2txt" style="text-align: center; padding-top: 30px; font-family: sans-serif; font-size: 18px; padding-left: 40px; padding-right: 40px;">We at Varuna Electric are dedicated to delivering revolutionary water pumping solutions. With <br>
-            the help of modern technology, reliable resources and innovative solutions, we have introduced a wide range of <br>water pumps and motors.
+        </div>
+
+
+        <div class="body-to-img" style="background-image: url(domestic&residential-img.webp); background-size: cover; ">
+          <p class="body-imgtxt">Domestic / <span style="color: red;">Residental</span></p>
+
+          <p class="body-2para" style="color: red;">For the urban and rural dwellers from high-rise buildings to
+            independent homes</p>
+
+          <div class="read-more">
+
+            <a href="dom&res.html"
+              style="text-decoration: none; color: black; margin-top: 30px; font-weight: 800; font-size: 20px;">Read
+              More</a>
+            <div class="read">
+              <a href="dom&res.html">
+                <div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="body-to-img" style="background-image: url(Industrial-img.webp); background-size: cover; ">
+          <p class="body-imgtxt" style="color: red;">Indu<span style="color: white;">strial</span></p>
+
+          <p class="body-2para" style="color: white;">Using unstopable energy to drive the industries</p>
+
+          <div class="read-more">
+
+            <a href="industrial.html"
+              style="text-decoration: none; color: white; margin-top: 30px; font-weight: 800; font-size: 20px;">Read
+              More</a>
+            <div class="read">
+              <a href="industrial.html">
+                <div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="body-to-img" style="background-image: url(solar-img.webp); background-size: cover; ">
+          <p class="body-imgtxt">Solar</p>
+
+
+          <p class="body-2para" style="color: red;"><span style="color: white;">Bringing the power of</span> sun to your
+            service</p>
+
+          <div class="read-more">
+
+            <a href="solar.html"
+              style="text-decoration: none; color: white; margin-top: 30px; font-weight: 800; font-size: 20px;">Read
+              More</a>
+            <div class="read">
+              <a href="solar.html">
+                <div class="circle"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- helped by bac -->
+
+    <p style="color: red; text-align: center; margin-top: 50px;font-size: 25px;">Induction Motors</p>
+
+
+    <div class="body-3part">
+
+      <div class="body-3txt" id="body-3txt"><img src="body-3img.png" alt="" style="display: none;">Designed to fulfil
+        the applications requiring high-performance levels and total reliability for a long time, the newly launched
+        range of Varuna Electrics 3-phase induction motors are offered with Class F insulation and Temperature Rise
+        limited to Class B for a long life. With ease of installation and low-cost power transmission units, our
+        Induction Motors are highly energy efficient 3 phase motors and consume less power as opposed to traditional
+        motors.
+
+        <div class="read-more">
+          <a href="#"
+            style="text-decoration: none; color: black; margin-top: -20px; font-weight: 500; font-size: 16px; margin-left: -30px;">Know
+            More</a>
+          <div class="read">
+            <a href="#">
+              <div class="circle" style="margin-top: -53px;"><i class="fa-solid fa-chevron-right"
+                  style="margin-top: 15px; color: red;"></i></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="body-3txt"><img src="body-3img.png" id="body-3img" alt=""></div>
+    </div>
+
+
+    <!-- helped by bac  -->
+
+
+    <div id="body-4part">
+
+      <div id="body4-1txt">
+        <h4 style="text-align: center; padding-top: 30px;">Our Market <span style="color: red;">Solutions</span>
+        </h4>
+      </div>
+
+
+      <div id="body4-2txt"
+        style="text-align: center; padding-top: 30px; font-family: sans-serif; font-size: 18px; padding-left: 40px; padding-right: 40px;">
+        We at Varuna Electric are dedicated to delivering revolutionary water pumping solutions. With <br>
+        the help of modern technology, reliable resources and innovative solutions, we have introduced a wide range of
+        <br>water pumps and motors.
+      </div>
+
+
+
+      <div id="body4-3txt"> <!--1st--->
+
+        <div class="body4-div4">
+          <div class="body4-imgtxt"><img src="agriculture-img.webp" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
+          <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; display: none;">
+            <p style="margin-right: 30px; font-size: 20px; padding-left: 10px; padding-bottom : 100px;">Submersible
+              Pumps
+            </p>
+          </div>
+          <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Submersible Pumps are sturdy and
+            robust, made with the aim to reduce water shortage problems in remote areas.
+          </p>
+
+
+          <div class="read-more">
+
+            <a href="#"
+              style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read
+              More</a>
+            <div class="read">
+              <a href="#">
+                <div class="circle"
+                  style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i
+                    class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="body4-div4"> <!--2nd--->
+          <div class="body4-imgtxt"><img src="domestic&residential-img.webp" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
+          <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; display: none;">
+            <p style="margin-right: 30px; font-size: 20px; padding-left: 10px; padding-bottom : 100px;">Monoblock Pumps
+            </p>
+          </div>
+
+          <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Monoblock Pumps introduced by Varuna
+            Electric come with easy installation features, greater efficiency and low maintenance cost
+          </p>
+
+          <div class="read-more">
+
+            <a href="#"
+              style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read
+              More</a>
+            <div class="read">
+              <a href="#">
+                <div class="circle"
+                  style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i
+                    class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="body4-div4"> <!--3rd--->
+          <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
+          <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; display: none;">
+            <p style="margin-right: 30px; font-size: 20px; padding-left: 10px; padding-bottom : 100px;">Self-Priming
+              Pumps
+            </p>
+          </div>
+          <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Varuna Electric is dedicated to develop
+            modern technology equipped self-priming pumps.
+          </p>
+
+          <div class="read-more">
+
+            <a href="#"
+              style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read
+              More</a>
+            <div class="read">
+              <a href="#">
+                <div class="circle"
+                  style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i
+                    class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="body4-div4"> <!--4th--->
+          <div class="body4-imgtxt"><img src="Solar-Arrow-img.png" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
+          <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt=""
+              style="height: 150px; width: 150px; margin-top: -30px; display: none;">
+            <p style="margin-right: 30px; font-size:20px; padding-left: 10px; padding-bottom : 100px;">Solar Pumps
+            </p>
+          </div>
+          <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Solar Pumps work from solar panels
+            without need of electricity or batteries as they are driven by electronically commuted motors.
+          </p>
+
+          <div class="read-more">
+
+            <a href="#"
+              style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read
+              More</a>
+            <div class="read">
+              <a href="#">
+                <div class="circle"
+                  style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i
+                    class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="body5-part">
+
+      <h3 style="color: red; text-align: center; padding-top: 30px;">CSR <span style="color: black;">Activities</span>
+      </h3>
+
+      <div class="body5-2div">
+
+        <div class="body5-2txt">
+          <!--1st-->
+          <div class="body5-img">
+            <div class="body5-imgtxt">
+              <img src="foundation-img.webp" alt=""
+                style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
+            </div>
+            <div class="body5-imgtxt">
+              <h4 style="padding-left: 25px;">Tree plantation activity
+              </h4>
+              <h5 style="padding-left: 25px; color: red;">Aug 20, 2021
+              </h5>
+
+              <div class="read-more">
+
+                <a href="#"
+                  style="text-decoration: none; color: black; margin-top: 30px; font-weight: 100; font-size: 16px;">Read
+                  More</a>
+                <div class="read">
+                  <a href="#">
+                    <div class="circle"
+                      style="margin-top: -5px; border: 2px solid red; border-left: 2px solid transparent;"><i
+                        class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="body5-2txt">
+          <!--2nd-->
+          <div class="body5-img">
+            <div class="body5-imgtxt">
+              <img src="nanhi_kalis-img.jpg" alt=""
+                style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
+            </div>
+            <div class="body5-imgtxt">
+              <h4 style="padding-left: 25px;">Nanhi Kali
+              </h4>
+              <h5 style="padding-left: 25px; color: red;">Aug 20, 2021
+              </h5>
+
+              <p style="padding-left: 25px;">
+                For some the birth of a baby girl is marked as the arrival of Goddess Laxmi to the family whereas in
+                some cases, the arrival of a baby girl calls for mourning rather than celebration.
+              </p>
+
+
             </div>
 
 
 
-            <div id="body4-3txt">         <!--1st--->
+          </div>
 
-              <div class="body4-div4">
-                <div class="body4-imgtxt"><img src="agriculture-img.webp" alt="" style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
-                <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt="" style="height: 150px; width: 150px; margin-top: -30px; display: none;"><p style="margin-right: 30px; font-size: 20px; padding-left: 10px; padding-bottom : 100px;">Submersible Pumps
-                </p></div>
-                <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Submersible Pumps are sturdy and robust, made with the aim to reduce water shortage problems in remote areas.
-                </p>
-
-
-                <div class="read-more">
-  
-                     <a href="#"  style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read More</a> 
-                       <div class="read"> 
-                          <a href="#"><div class="circle" style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div></a>
-                       </div>
-           
-                   </div>
-                
-              </div>
-
-
-              <div class="body4-div4">        <!--2nd--->
-                <div class="body4-imgtxt"><img src="domestic&residential-img.webp" alt="" style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
-                <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt="" style="height: 150px; width: 150px; margin-top: -30px; display: none;"><p style="margin-right: 30px; font-size: 20px; padding-left: 10px; padding-bottom : 100px;">Monoblock Pumps
-                </p></div>
-
-                <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Monoblock Pumps introduced by Varuna Electric come with easy installation features, greater efficiency and low maintenance cost
-                </p>
-
-                <div class="read-more">
-  
-                  <a href="#" style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read More</a> 
-                    <div class="read"> 
-                       <a href="#"><div class="circle" style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div></a>
-                    </div>
-        
-                </div>
-                
-              </div>
-
-
-              <div class="body4-div4">     <!--3rd--->
-                <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt="" style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
-                <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt="" style="height: 150px; width: 150px; margin-top: -30px; display: none;"><p style="margin-right: 30px; font-size: 20px; padding-left: 10px; padding-bottom : 100px;">Self-Priming Pumps
-                </p></div>
-                <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Varuna Electric is dedicated to develop modern technology equipped self-priming pumps.
-                </p>
-
-                <div class="read-more">
-  
-                  <a href="#" style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read More</a> 
-                    <div class="read"> 
-                       <a href="#"><div class="circle" style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div></a>
-                    </div>
-        
-                </div>
-                
-              </div>
-
-
-              <div class="body4-div4">      <!--4th--->
-                <div class="body4-imgtxt"><img src="Solar-Arrow-img.png" alt="" style="height: 150px; width: 150px; margin-top: -30px; margin-left: 30px;"></div>
-                <div class="body4-imgtxt"><img src="Self-Priming-img.png" alt="" style="height: 150px; width: 150px; margin-top: -30px; display: none;"><p style="margin-right: 30px; font-size:20px; padding-left: 10px; padding-bottom : 100px;">Solar Pumps
-                </p></div>
-                <p style="padding-left: 30px; margin-top: -100px; " class="body4-txtp">Solar Pumps work from solar panels without need of electricity or batteries as they are driven by electronically commuted motors.
-                </p>
-
-                <div class="read-more">
-  
-                  <a href="#" style="text-decoration: none; color: black; margin-top: -70px; font-weight: 100; font-size: 16px;">Read More</a> 
-                    <div class="read"> 
-                       <a href="#"><div class="circle" style="margin-top: -105px; border: 2px solid black; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: black;"></i></div></a>
-                    </div>
-        
-                </div>
-                
-              </div>
-
-            </div>
+        </div>
 
       </div>
 
 
+
       <div id="body5-part">
 
-              <h3 style="color: red; text-align: center; padding-top: 30px;">CSR <span style="color: black;">Activities</span></h3>
+        <h3 style="color: black; text-align: center; padding-top: 30px;">News & <span
+            style="color: red;">Activities</span></h3>
 
         <div class="body5-2div">
-          
-            <div class="body5-2txt">
-                                                  <!--1st-->
-              <div class="body5-img">
-                <div class="body5-imgtxt">
-                  <img src="foundation-img.webp" alt="" style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
-                </div>
-                <div class="body5-imgtxt">
-                  <h4 style="padding-left: 25px;">Tree plantation activity
-                  </h4>
-                  <h5 style="padding-left: 25px; color: red;">Aug 20, 2021
-                  </h5>
 
-                  <div class="read-more">
-  
-                    <a href="#" style="text-decoration: none; color: black; margin-top: 30px; font-weight: 100; font-size: 16px;">Read More</a> 
-                      <div class="read"> 
-                         <a href="#"><div class="circle" style="margin-top: -5px; border: 2px solid red; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                      </div>
-          
+          <div class="body5-2txt">
+                                                    <!--1st-->
+            <div class="body5-img">
+              <div class="body5-imgtxt">
+                <img src="world environemt-img.webp" alt=""
+                  style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
+              </div>
+              <div class="body5-imgtxt">
+                <h4 style="padding-left: 25px;">World Environment Day
+                </h4>
+                <h5 style="padding-left: 25px; color: red;"><span style="opacity: 0.5; color: grey;">Events |</span> Feb
+                  14, 2022
+                </h5>
+
+                <div class="read-more">
+
+                  <a href="#"
+                    style="text-decoration: none; color: black; margin-top: 30px; font-weight: 100; font-size: 16px;">Read
+                    More</a>
+                  <div class="read">
+                    <a href="#">
+                      <div class="circle"
+                        style="margin-top: -5px; border: 2px solid red; border-left: 2px solid transparent;"><i
+                          class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div>
+                    </a>
                   </div>
 
                 </div>
@@ -588,114 +788,123 @@
 
             </div>
 
-            <div class="body5-2txt">
-                                                  <!--2nd-->
-              <div class="body5-img">
-                <div class="body5-imgtxt">
-                  <img src="nanhi_kalis-img.jpg" alt="" style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
-                </div>
-                <div class="body5-imgtxt">
-                  <h4 style="padding-left: 25px;">Nanhi Kali
-                  </h4>
-                  <h5 style="padding-left: 25px; color: red;">Aug 20, 2021
-                  </h5>
-
-                  <p style="padding-left: 25px;">
-                    For some the birth of a baby girl is marked as the arrival of Goddess Laxmi to the family whereas in some cases, the arrival of a baby girl calls for mourning rather than celebration. 
-                  </p>
-
-
-                </div>
-
-
-
-            </div>
-
-        </div>
-
-      </div>
-
-
-
-      <div id="body5-part">
-
-        <h3 style="color: black; text-align: center; padding-top: 30px;">News & <span style="color: red;">Activities</span></h3>
-
-  <div class="body5-2div">
-    
-      <div class="body5-2txt">
-                                            <!--1st-->
-        <div class="body5-img">
-          <div class="body5-imgtxt">
-            <img src="world environemt-img.webp" alt="" style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
           </div>
-          <div class="body5-imgtxt">
-            <h4 style="padding-left: 25px;">World Environment Day
-            </h4>
-            <h5 style="padding-left: 25px; color: red;"><span style="opacity: 0.5; color: grey;">Events |</span> Feb 14, 2022
-            </h5>
 
-            <div class="read-more">
+          <div class="body5-2txt">
+                                          <!--2nd-->
+            <div class="body5-img">
+              <div class="body5-imgtxt">
+                <img src="launch optiqua-img.png" alt=""
+                  style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
+              </div>
+              <div class="body5-imgtxt">
+                <h4 style="padding-left: 25px;">Launched Optiqua
+                </h4>
+                <h5 style="padding-left: 25px; color: red;"><span style="color: grey; opacity: 0.5;">Events |</span> Dec
+                  9, 2021
+                </h5>
 
-              <a href="#" style="text-decoration: none; color: black; margin-top: 30px; font-weight: 100; font-size: 16px;">Read More</a> 
-                <div class="read"> 
-                   <a href="#"><div class="circle" style="margin-top: -5px; border: 2px solid red; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
+                <div class="read-more">
+
+                  <a href="#"
+                    style="text-decoration: none; color: black; margin-top: 30px; font-weight: 100; font-size: 16px;">Read
+                    More</a>
+                  <div class="read">
+                    <a href="#">
+                      <div class="circle"
+                        style="margin-top: -5px; border: 2px solid red; border-left: 2px solid transparent;"><i
+                          class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div>
+                    </a>
+                  </div>
+
                 </div>
-    
+
+
+
+
+              </div>
+
+
+
             </div>
 
           </div>
 
         </div>
 
-      </div>
 
-      <div class="body5-2txt">
-                                            <!--2nd-->
-        <div class="body5-img">
-          <div class="body5-imgtxt">
-            <img src="launch optiqua-img.png" alt="" style="height: 200px; width: 300px; padding-top: 20px; padding: 20px; ">
-          </div>
-          <div class="body5-imgtxt">
-            <h4 style="padding-left: 25px;">Launched Optiqua
-            </h4>
-            <h5 style="padding-left: 25px; color: red;"><span style="color: grey; opacity: 0.5;">Events |</span> Dec 9, 2021
-            </h5>
+          <h3 style="color: red; text-align: center; padding-top: 60px;">Follow Us On Instagram</h3>
 
-            <div class="read-more">
 
-              <a href="#" style="text-decoration: none; color: black; margin-top: 30px; font-weight: 100; font-size: 16px;">Read More</a> 
-                <div class="read"> 
-                   <a href="#"><div class="circle" style="margin-top: -5px; border: 2px solid red; border-left: 2px solid transparent;"><i class="fa-solid fa-chevron-right" style="margin-top: 15px; color: red;"></i></div></a>
-                </div>
-    
+  </main>
+
+
+  <footer>
+
+    <div class="footer-part">
+
+        <div class="footer-5div">
+
+            <div class="footer-5things" style="background-color: transparent;">
+              <h5>Quick Links</h5>
+              <a href="index.html" class="footertxt">Home</a>
+              <a href="about-varuna.html" class="footertxt">About Varuna</a>
+              <a href="career.html" class="footertxt">Career</a>
+              <a href="contact.html" class="footertxt">Contact</a>
+              <a href="csr.html" class="footertxt">CSR</a>
             </div>
 
 
-            
+            <div class="footer-5things" style="background-color: transparent;">
+              <h5>Products</h5>
+              <a href="" class="footertxt">Induction Motors</a>
+              <a href="" class="footertxt">Submersible Pupms</a>
+              <a href="" class="footertxt">Monoblock Pumps</a>
+              <a href="" class="footertxt">Self-Priming Pumps</a>
+              <a href="" class="footertxt">Solar Pumps</a>
+            </div>
 
-          </div>
+            <div class="footer-5things" style="background-color: transparent;">
+              <h5>Application</h5>
+              <a href="" class="footertxt">Agriculture</a>
+              <a href="" class="footertxt">Commercial</a>
+              <a href="" class="footertxt">Domestic / Residental</a>
+              <a href="" class="footertxt">Industrial</a>
+              <a href="" class="footertxt">Solar</a>
+            </div>
 
 
-
-      </div>
-
-  </div>
-
-</div>
-
-
+            <div class="footer-5things" style="background-color: transparent;">
+              <h5>Media</h5>
+              <a href="" class="footertxt">Events</a>
+              <a href="" class="footertxt">News</a>
+              <a href="" class="footertxt">Gallery</a>
+            </div>
 
 
-      
-      
-    </main>
+            <div class="footer-5things" style="background-color: transparent;">
+              <h5>Contact</h5>
 
+              <p>La-Gajjar Machineries Pvt. Ltd.
+                CIN :: U17110GJ1981PTC004263
+                </p>
 
-    
-    
-    <div id="back-top">
-       <a href="#"><i class="fa-solid fa-chevron-up" style="font-size: 15px; color: white;"></i></a>
+                <p>Acidwala estate, Nagarwel Hanuman Road, Amraiwadi, Ahmedabad - 380 026 Gujarat. (INDIA)
+                </p>
+            </div>
+
+        </div>
+
     </div>
+
+  </footer>
+
+
+
+
+  <div id="back-top">
+    <a href="#"><i class="fa-solid fa-chevron-up" style="font-size: 15px; color: white;"></i></a>
+  </div>
 </body>
+
 </html>
