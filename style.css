@@ -2,6 +2,20 @@ body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 10px;
+}
+
+
 #nav-head{
     width: 100vw;
     height: 55px;
@@ -1112,7 +1126,39 @@ footer{
     color: black;
 }
 
+.footertxt:hover{
+    color: red;
+}
 
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: -50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer-lastsection{
+    flex-basis: 200;
+    flex-grow: 1;
+    width: 170px;
+    height: 80px;
+    background-color: red;
+    font-size: 18px;
+    
+}
+
+#footer-icons{
+    margin: 10px;
+    /* padding-top: 10px; */
+}
+
+#footer-icons:hover{
+
+    color: red;
+
+}
 
 
 
