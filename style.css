@@ -424,6 +424,8 @@ body{
     }
 }
 
+/* menu for new ends here*/
+
 
 #images{
     width: 100vw;
@@ -889,7 +891,7 @@ body{
 
 
 #body-3img{
-    height: 200px; 
+    height: 180px; 
     width: 350px; 
     /* margin: 20px; */
     margin-left: 2%;
