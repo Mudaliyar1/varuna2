@@ -437,7 +437,7 @@ body{
     flex-wrap: wrap;
     background-color: transparent;
     width: 100vw;
-    height: 600px;
+    height: 700px;
     margin-top: 200px;
     gap: 30px;
     padding: 30px;
@@ -451,3 +451,130 @@ body{
     height: 200px;
     background-color: transparent;
 }
+
+
+
+.main-2part{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgba(211, 211, 211, 0.185); */
+    width: 100vw;
+    height: 500px;
+    margin-top: 40px;
+    gap: 30px;
+    padding: 30px;
+}
+
+@media(max-width:1020px){
+    .main-2part{
+        margin-top: 50px;
+    }
+}
+@media(max-width:875px){
+    .main-2part{
+        margin-top: 90px;
+    }
+}
+@media(max-width:823px){
+    .main-2part{
+        margin-top: 150px;
+    }
+}
+@media(max-width:784px){
+    .main-2part{
+        margin-top: 170px;
+    }
+}
+@media(max-width:740px){
+    .main-2part{
+        margin-top: 210px;
+    }
+}
+@media(max-width:684px){
+    .main-2part{
+        margin-top: 280px;
+    }
+}
+@media(max-width:664px){
+    .main-2part{
+        margin-top: 320px;
+    }
+}
+@media(max-width:648px){
+    .main-2part{
+        margin-top: 360px;
+    }
+}
+@media(max-width:623px){
+    .main-2part{
+        margin-top: 400px;
+    }
+}
+@media(max-width:592px){
+    .main-2part{
+        margin-top: 440px;
+    }
+}
+@media(max-width:561px){
+    .main-2part{
+        margin-top: 480px;
+    }
+}
+@media(max-width:554px){
+    .main-2part{
+        margin-top: 530px;
+    }
+}
+@media(max-width:523px){
+    .main-2part{
+        margin-top: 580px;
+    }
+}
+@media(max-width:510px){
+    .main-2part{
+        margin-top: 620px;
+    }
+}
+@media(max-width:490px){
+    .main-2part{
+        margin-top: 660px;
+    }
+}
+@media(max-width:470px){
+    .main-2part{
+        margin-top: 730px;
+    }
+}
+@media(max-width:448px){
+    .main-2part{
+        margin-top: 770px;
+    }
+}
+@media(max-width:436px){
+    .main-2part{
+        margin-top: 700px;
+    }
+}
+@media(max-width:380px){
+    .main-2part{
+        margin-top: 760px;
+    }
+}
+@media(max-width:368px){
+    .main-2part{
+        margin-top: 790px;
+    }
+}
+
+
+.main-2txt{
+    flex-basis: 200;
+    flex-grow: 1;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    /* background-color: red; */
+}
+
+
+
