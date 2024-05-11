@@ -425,3 +425,29 @@ body{
 }
 
 /*section ends here*/
+
+
+
+/* main part css starts from here */
+
+
+
+.main-1part{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    width: 100vw;
+    height: 600px;
+    margin-top: 200px;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.main-1txt{
+    flex-basis: 200;
+    flex-grow: 1;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
