@@ -441,7 +441,7 @@ body{
     
 }
 input{
-    background: black;
+    background: red;
     border: 0px solid transparent;
     /* width: 140px; */
     border-radius: 5px;
@@ -454,6 +454,7 @@ input{
     background-color: black;
     height: 15px;
     padding-top: 20px;
+    
     
 }
 
