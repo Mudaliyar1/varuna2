@@ -441,7 +441,7 @@ body {
 /* main code stars from here */
 
 
-.address1 {
+/* .address1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -455,7 +455,7 @@ body {
     background-color: red;
     flex-grow: 1;
     flex-basis: 200;
-}
+} */
 
 
 
