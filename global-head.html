@@ -21,6 +21,35 @@
 
     <link rel="stylesheet" href="global-head.css">
     <script src="script.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#image1").click(function(){
+                $("#img1").show();
+                $("#img2").hide();
+                $("#img3").hide();
+                $("#img4").hide();
+            });
+            $("#image2").click(function(){
+                $("#img2").show();
+                $("#img1").hide();
+                $("#img3").hide();
+                $("#img4").hide();
+            });
+            $("#image3").click(function(){
+                $("#img3").show();
+                $("#img2").hide();
+                $("#img1").hide();
+                $("#img4").hide();
+            });
+            $("#image4").click(function(){
+                $("#img4").show();
+                $("#img2").hide();
+                $("#img3").hide();
+                $("#img1").hide();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -249,16 +278,16 @@
         <div id="images"></div> -->
 
         <main id="body-main">
-            <img src="body-img1.png" alt="" style="width: 100vw;" id="img">
-            <img src="body-img2.png" alt="" style="display: none; width: 100vw;" id="img">
-            <img src="body-img3.png" alt="" style="display: none; width: 100vw;" id="img">
-            <img src="body-img4.png" alt="" style="display: none; width: 100vw;" id="img">
+            <img src="body-img1.png" alt="" style="width: 100vw;" id="img1">
+            <img src="body-img2.png" alt="" style="display: none; width: 100vw;" id="img2">
+            <img src="body-img3.png" alt="" style="display: none; width: 100vw;" id="img3">
+            <img src="body-img4.png" alt="" style="display: none; width: 100vw;" id="img4">
         </main>
         <div style="display: flex; margin-left: 100px; margin-top: 50px; gap: 10px;">
-            <input type="radio" name="img">
-            <input type="radio" name="img">
-            <input type="radio" name="img">
-            <input type="radio" name="img">
+            <input type="radio" name="img" id="image1">
+            <input type="radio" name="img" id="image2">
+            <input type="radio" name="img" id="image3">
+            <input type="radio" name="img" id="image4">
         </div>
 
         <div id="body-txt" style="margin-top: 80px;">
