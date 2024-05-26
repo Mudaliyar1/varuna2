@@ -448,7 +448,7 @@ body {
 
 }
 
-@keyframes anim {
+/* @keyframes anim {
     0% {
         background-image: url(body-img1.png);
     }
@@ -466,14 +466,16 @@ body {
     }
 
 
-}
+} */
 
 #first-txt {
+
+    font-family: Alata;
     padding-top: 20px;
     font-size: 22px;
     word-spacing: 4px;
     letter-spacing: 2px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 #nd2-txt {
