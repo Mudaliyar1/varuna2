@@ -16,6 +16,9 @@ body {
 }
 
 
+#body-main>img{
+    height: 7-vw;
+}
 
 
 #nav-head {
@@ -474,7 +477,7 @@ body {
 }
 
 #first-txt {
-    padding-top: 20px;
+    margin-top: -20px;
     font-size: 22px;
     word-spacing: 4px;
     letter-spacing: 2px;
