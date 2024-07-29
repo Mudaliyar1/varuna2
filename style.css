@@ -1847,7 +1847,7 @@ footer {
         display: flex;
         position: absolute;
         left: 45%;
-        top: 65%;
+        top: 45%;
         gap: 10px;
     
     }
@@ -1857,7 +1857,7 @@ footer {
         margin-left: 10px;
         display: flex;
         position: absolute;
-        top: 60%;
+        top: 40%;
         left: 44%;
         gap: 10px;
     
