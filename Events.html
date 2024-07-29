@@ -18,7 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-        
+
     <link rel="stylesheet" href="Events.css">
     <script src="jquery-3.7.1.js"></script>
     <script>
@@ -38,6 +38,21 @@
                 $(".sec1").hide();
                 $(".sec2").hide();
             });
+
+
+            $("#hamburger").click(function () {
+                $("#hamburger-slide").show();
+                $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", "position": "absolute", "top": "-70px", "z-index": "10" });
+            });
+
+            $("#cross-icon").click(function () {
+                // $("#hamburger").hide();
+                $("#hamburger-slide").slideUp();
+                // $("#hamburger-slide").css({ "display": "none" });
+                // $("#hamburger").show();
+            });
+
+
 
         });
     </script>
@@ -263,9 +278,153 @@
 
 
         <div id="hamburger">
-            <a href="hambur-events.html"><i class="fa-solid fa-bars" style="color: red;"></i></a>
+            <!-- <a href="hamburger.html"></a> -->
+            <i class="fa-solid fa-bars" style="color: red;"></i>
+            <div id="hamburger-slide" style="display: none; height: 100vh;">
+                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); height: 100vh;" id="hamburger-slide-part">
+                    <!-- <p style="color: black;">hello </p> -->
+      
+      
+                    <div id="varuna-img">
+        
+                    </div>
+                
+                    <div id="cross-icon">
+                        <i class="fa-solid fa-xmark" style="color: red;"></i>
+                    </div>
+                
+                    
+                    <nav id="menu">
+                        <p class="menu-select">
+                            <a href="index.html" class="menu-select">Home</a>
+                        </p>
+                        
+                        <!-- <select name="menu" class="menu-select">
+                            <option value="about"><a href="about-varuna.html">About Varuna</a></option>
+                            <option value="about us">About us</option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="product"><a href="product.html">Product</a></option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="application"><a href="application.html">Application</a></option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="career"><a href="career.html">Career</a></option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="media"><a href="media.html">Media</a></option>
+                        </select> -->
+                
+                
+                
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About varuna
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
+                              <li><a class="dropdown-item" href="about-company.html">About us</a></li>
+                              <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
+                              <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
+                              <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
+                              <li><a class="dropdown-item" href="company-policy.html">Company Policies</a></li>
+                              <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+                            </ul>
+                          </div>
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+                              <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible <br> Pumps</a></li>
+                              <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible <br> Pumps</a></li>
+                              <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock <br> Pumps</a></li>
+                              <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy Efficent-Induction <br> Mototrs</a></li>
+                              <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal Regenerative <br> Self Priming Pumps</a></li>
+                              <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a></li>
+                            </ul>
+                          </div>
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Applications
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
+                              <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                              <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a></li>
+                              <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
+                              <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
+                            </ul>
+                          </div>
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Career
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Career.html">Career</a></li>
+                              <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
+                              <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
+                            </ul>
+                          </div>
+                
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Media
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Media.html">Media</a></li>
+                              <li><a class="dropdown-item" href="Events.html">Events</a></li>
+                              <li><a class="dropdown-item" href="News.html">News</a></li>
+                              <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            </ul>
+                          </div>
+                
+                
+                        <p class="menu">
+                            <a href="csr.html" class="menu-select">CSR</a>
+                        </p>
+                
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Contact
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
+                              <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
+                              <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
+                              <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a></li>
+                              <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
+                            </ul>
+                          </div>
+                       </div>
+                
+                       <div class="shop-cart">
+                        <p class="s-c"><a href="" style="text-decoration: none; color: red;">Shop</a></p>
+                        <p class="s-c"><a href="addtocart.html" style="text-decoration: none; color: red;">Add to Cart</a></p>
+                        </div>
+                
+                        <!-- <select name="menu" class="menu-select">
+                            <option value="contact"><a href="contact.html">Contact</a></option>
+                        </select> -->
+                
+                
+                    </nav>
+                
+                    <div id="reg-log">
+                      <p class="sign"><a href="suggestion.html" style="text-decoration: none; color: red;">Suggestion</a></p>
+                      <p class="sign"><a href="login.html" style="text-decoration: none; color: red;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+      
         </div>
-
     </section>
 
     <!-- section ends here -->
@@ -316,48 +475,39 @@
 
             <div class="grid-container sec1">
                 <div class="grid-item sec1">
-                    <img src="world environemt-img.webp" alt="Image 1"
-                        class="grid-image" style="height: 250px;">
+                    <img src="world environemt-img.webp" alt="Image 1" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">World Environment day</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="anual-img.jpg" alt="Image 2"
-                        class="grid-image" style="height: 250px;">
+                    <img src="anual-img.jpg" alt="Image 2" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Annual Dealer Conference</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="15th img.jpg"
-                        alt="Image 3" class="grid-image" style="height: 250px;">
+                    <img src="15th img.jpg" alt="Image 3" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">15th Aug 2021</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="50th img.jpg" alt="Image 4"
-                        class="grid-image" style="height: 250px;">
+                    <img src="50th img.jpg" alt="Image 4" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">50th National Saftey Week</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="builder-met.jpg" alt="Image 5"
-                        class="grid-image" style="height: 250px;">
+                    <img src="builder-met.jpg" alt="Image 5" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Builder Meet</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="aop-2019.jpg" alt="Image 6"
-                        class="grid-image" style="height: 250px;">
+                    <img src="aop-2019.jpg" alt="Image 6" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">AOP - 2019</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="yoga 2019.jpg"
-                        alt="Image 7" class="grid-image" style="height: 250px;">
+                    <img src="yoga 2019.jpg" alt="Image 7" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Yoga Day</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="blood donate.jpg" alt="Image 8"
-                        class="grid-image" style="height: 250px;">
+                    <img src="blood donate.jpg" alt="Image 8" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Blood Donate Day</div>
                 </div>
                 <div class="grid-item sec1">
-                    <img src="dealer factory.jpg" alt="Image 9"
-                        class="grid-image" style="height: 250px;">
+                    <img src="dealer factory.jpg" alt="Image 9" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Dealer Factory Visit</div>
                 </div>
             </div>
@@ -367,48 +517,39 @@
 
             <div class="grid-container sec2" style="display: none; ">
                 <div class="grid-item sec2">
-                    <img src="world water 2019.jpg"
-                        alt="Image 1" class="grid-image" style="height: 250px;">
+                    <img src="world water 2019.jpg" alt="Image 1" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">World Water Day 2019</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="holi 2019.jpg"
-                        alt="Image 2" class="grid-image" style="height: 250px;">
+                    <img src="holi 2019.jpg" alt="Image 2" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Holi - 2019</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="dealer visit 2019.jpg"
-                        alt="Image 3" class="grid-image" style="height: 250px;">
+                    <img src="dealer visit 2019.jpg" alt="Image 3" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Dealer Visit - 2019</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="mechanic train.jpg" alt="Image 4"
-                        class="grid-image" style="height: 250px;">
+                    <img src="mechanic train.jpg" alt="Image 4" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Mechanic Training</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="service team.jpg" alt="Image 5"
-                        class="grid-image" style="height: 250px;">
+                    <img src="service team.jpg" alt="Image 5" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Service Team Training - 2019</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="dealer conference.jpg" alt="Image 6"
-                        class="grid-image" style="height: 250px;">
+                    <img src="dealer conference.jpg" alt="Image 6" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Dealer Conference</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="spot award 2019.jpg"
-                        alt="Image 7" class="grid-image" style="height: 250px;">
+                    <img src="spot award 2019.jpg" alt="Image 7" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Spot Award - 2018</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="medical room.jpg"
-                        alt="Image 8" class="grid-image" style="height: 250px;">
+                    <img src="medical room.jpg" alt="Image 8" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Medical Room Inauguration</div>
                 </div>
                 <div class="grid-item sec2">
-                    <img src="mechanic factory visit.jpg" alt="Image 9"
-                        class="grid-image" style="height: 250px;">
+                    <img src="mechanic factory visit.jpg" alt="Image 9" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Mechanic Factory Visit</div>
                 </div>
             </div>
@@ -417,48 +558,39 @@
 
             <div class="grid-container sec3" style="display: none; ">
                 <div class="grid-item sec3">
-                    <img src="celebration.jpg" alt="Image 1"
-                        class="grid-image" style="height: 250px;">
+                    <img src="celebration.jpg" alt="Image 1" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Celebration Of Achievment</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="saraswati.jpg"
-                        alt="Image 2" class="grid-image" style="height: 250px;">
+                    <img src="saraswati.jpg" alt="Image 2" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Saraswati Vandana</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="christmas.jpg"
-                        alt="Image 3" class="grid-image" style="height: 250px;">
+                    <img src="christmas.jpg" alt="Image 3" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Chirstmas Celebration</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="goa.jpg" alt="Image 4"
-                        class="grid-image" style="height: 250px;">
+                    <img src="goa.jpg" alt="Image 4" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Goa Dealer Meet</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="sub dealer.jpg" alt="Image 5"
-                        class="grid-image" style="height: 250px;">
+                    <img src="sub dealer.jpg" alt="Image 5" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Sub Dealer Meet</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="gurkul.jpg" alt="Image 6"
-                        class="grid-image" style="height: 250px;">
+                    <img src="gurkul.jpg" alt="Image 6" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Gurukul Inauguration</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="saftey weak.jpg"
-                        alt="Image 7" class="grid-image" style="height: 250px;">
+                    <img src="saftey weak.jpg" alt="Image 7" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Saftey Week</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="energy.jpg"
-                        alt="Image 8" class="grid-image" style="height: 250px;">
+                    <img src="energy.jpg" alt="Image 8" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Energy Coversation Week Celebration</div>
                 </div>
                 <div class="grid-item sec3">
-                    <img src="cricket.jpg" alt="Image 9"
-                        class="grid-image" style="height: 250px;">
+                    <img src="cricket.jpg" alt="Image 9" class="grid-image" style="height: 250px;">
                     <div class="grid-caption">Cricket Match</div>
                 </div>
             </div>
