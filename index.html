@@ -477,7 +477,7 @@
 
   
   <form>
-    <input type="radio" id="radio1" name="myRadio" value="option1" style="display: none;">
+    <input type="radio" id="radio1" name="myRadio" value="option1" style="display: none;" checked>
     <!-- <label for="radio1">Option 1</label> -->
     <br>
     <input type="radio" id="radio2" name="myRadio" value="option2" style="display: none;">
@@ -503,7 +503,7 @@
     const image = document.getElementById("image");
 
     // Set the initial image to none
-    image.src = "";
+    image.src = "body-img1.png";
 
     // Add event listeners to each radio button
     radios.forEach((radio) => {
@@ -532,6 +532,7 @@
     setInterval(() => {
       currentImage = (currentImage + 1) % images.length;
       image.src = images[currentImage];
+      radios[currentImage].checked = true;
     }, 2000);
   </script>
 
