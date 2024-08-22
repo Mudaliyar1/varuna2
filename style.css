@@ -447,6 +447,8 @@ body {
 
 /* main code starts from here */
 
+
+
 /* #images {
     width: 100vw;
     height: 823px;
@@ -1897,3 +1899,60 @@ footer {
     }
     
 }
+
+
+
+
+
+
+
+        /* Day mode styles */
+        body.day-mode {
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+        }
+
+        /* Night mode styles */
+        body.night-mode {
+            --background-color: #212121;
+            --text-color: #fff;
+            --primary-color: #6610f2;
+            --secondary-color: #343a40;
+        }
+
+        /* Apply day mode styles by default */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Apply styles to specific elements */
+        #content {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .primary-button {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .secondary-button {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        /* Add transitions to smooth out the mode switch */
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #content {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .primary-button, .secondary-button {
+            transition: background-color 0.3s, color 0.3s;
+        }
