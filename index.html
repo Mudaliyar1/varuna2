@@ -28,31 +28,33 @@
 
   <script src="jquery-3.7.1.js"></script>
   <script>
-    $(document).ready(function () {
-      $("#image1").click(function () {
-        $("#img1").show();
-        $("#img2").hide();
-        $("#img3").hide();
-        $("#img4").hide();
-      });
-      $("#image2").click(function () {
-        $("#img2").show();
-        $("#img1").hide();
-        $("#img3").hide();
-        $("#img4").hide();
-      });
-      $("#image3").click(function () {
-        $("#img3").show();
-        $("#img2").hide();
-        $("#img1").hide();
-        $("#img4").hide();
-      });
-      $("#image4").click(function () {
-        $("#img4").show();
-        $("#img2").hide();
-        $("#img3").hide();
-        $("#img1").hide();
-      });
+     $(document).ready(function () {
+
+      
+    //   $("#image1").click(function () {
+    //     $("#img1").show();
+    //     $("#img2").hide();
+    //     $("#img3").hide();
+    //     $("#img4").hide();
+    //   });
+    //   $("#image2").click(function () {
+    //     $("#img2").show();
+    //     $("#img1").hide();
+    //     $("#img3").hide();
+    //     $("#img4").hide();
+    //   });
+    //   $("#image3").click(function () {
+    //     $("#img3").show();
+    //     $("#img2").hide();
+    //     $("#img1").hide();
+    //     $("#img4").hide();
+    //   });
+    //   $("#image4").click(function () {
+    //     $("#img4").show();
+    //     $("#img2").hide();
+    //     $("#img3").hide();
+    //     $("#img1").hide();
+    //   });
 
       $("#hamburger").click(function () {
         $("#hamburger-slide").show();
@@ -461,18 +463,77 @@
 
 
   <main id="body-main">
-    <img src="body-img1.png" alt="" style="width: 100vw;" id="img1">
+   <!-- <img src="body-img1.png" alt="" style="width: 100vw;" id="img1">
     <img src="body-img2.png" alt="" style="display: none; width: 100vw;" id="img2">
     <img src="body-img3.png" alt="" style="display: none; width: 100vw;" id="img3">
     <img src="body-img4.png" alt="" style="display: none; width: 100vw;" id="img4">
   </main>
-  <div style="display: flex; margin-left: 50px; margin-top: 50px; gap: 10px;">
+  <div style="display: flex; margin-left: 50px; margin-top: 15px; gap: 10px;">
     <input type="radio" name="img" id="image1">
     <input type="radio" name="img" id="image2">
     <input type="radio" name="img" id="image3">
     <input type="radio" name="img" id="image4">
+  </div> -->
+
+  
+  <form>
+    <input type="radio" id="radio1" name="myRadio" value="option1" style="display: none;">
+    <!-- <label for="radio1">Option 1</label> -->
+    <br>
+    <input type="radio" id="radio2" name="myRadio" value="option2" style="display: none;">
+    <!-- <label for="radio2">Option 2</label> -->
+    <br>
+    <input type="radio" id="radio3" name="myRadio" value="option3" style="display: none;">
+    <!-- <label for="radio3">Option 3</label> -->
+    <br>
+    <input type="radio" id="radio4" name="myRadio" value="option4" style="display: none;">
+    <!-- <label for="radio4">Option 4</label> -->
+  </form>
+  <!-- <img src="body-img3.png" alt="" style="width: 100vw;"> -->
+  <div id="image-container">
+    <img id="image" src="body-img1.png" style="width: 100vw; margin-top: -70px;">
+    <img id="image" src="body-img2.png" style="display: none; width: 100vw; margin-top: -70px;">
+    <img id="image" src="body-img3.png" style="display: none; width: 100vw; margin-top: -70px;">
+    <img id="image" src="body-img4.png" style="display: none; width: 100vw; margin-top: -70px;">
   </div>
 
+  <script>
+    const radios = document.getElementsByName("myRadio");
+    const imageContainer = document.getElementById("image-container");
+    const image = document.getElementById("image");
+
+    // Set the initial image to none
+    image.src = "";
+
+    // Add event listeners to each radio button
+    radios.forEach((radio) => {
+      radio.addEventListener("click", () => {
+        // Show the corresponding image when a radio button is clicked
+        switch (radio.value) {
+          case "option1":
+            image.src = "body-img1.png";
+            break;
+          case "option2":
+            image.src = "body-img2.png";
+            break;
+          case "option3":
+            image.src = "body-img3.png";
+            break;
+          case "option4":
+            image.src = "body-img4.png";
+            break;
+        }
+      });
+    });
+
+    // Change the image every 5 seconds
+    let currentImage = 0;
+    const images = ["body-img1.png", "body-img2.png", "body-img3.png", "body-img4.png"];
+    setInterval(() => {
+      currentImage = (currentImage + 1) % images.length;
+      image.src = images[currentImage];
+    }, 2000);
+  </script>
 
 
 

@@ -447,7 +447,7 @@ body {
 
 /* main code starts from here */
 
-#images {
+/* #images {
     width: 100vw;
     height: 823px;
     background-size: contain;
@@ -474,10 +474,10 @@ body {
     }
 
 
-}
+} */
 
 #first-txt {
-    margin-top: -20px;
+    margin-top: -60px;
     font-size: 22px;
     word-spacing: 4px;
     letter-spacing: 2px;
@@ -1118,8 +1118,13 @@ body {
     background-color: red;
     color: white;
     transition: all 2s ease;
-
 }
+.body4-div4 img:hover {
+    transform: rotateY(180deg);
+    transition: all 2s ease;
+}
+
+
 
 @media (max-width: 440px) {
     .body4-div4 {
@@ -1149,6 +1154,7 @@ body {
 }
 
 
+ 
 
 #body5-part {
     width: 100vw;
