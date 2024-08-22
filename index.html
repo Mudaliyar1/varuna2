@@ -56,10 +56,18 @@
       //     $("#img1").hide();
       //   });
 
+      $("#visit").click(function(){
+        $("#warning").hide();
+      });
+
+
+
       $("#hamburger").click(function () {
         $("#hamburger-slide").show();
-        $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", 
-        "position": "absolute", "top": "-70px", "z-index": "10" });
+        $("#hamburger-slide").css({
+          "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white",
+          "position": "absolute", "top": "-70px", "z-index": "10"
+        });
       });
 
       $("#cross-icon").click(function () {
@@ -74,10 +82,36 @@
 
 </head>
 
-<body>
+<body id="body">
 
 
+  <div id="warning" style="width: 100vw; height: 100vh; background-color: whitesmoke;  position: fixed; z-index: 2;">
+
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px; color: red;">
+        <h3>Hello user</p>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+        <h3>This is a Clone Site</p>
+    </div>
+
+    
+    <div
+      style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 300px; height: 40%; background-color: grey; border-radius: 10px;">
+    
+      <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px; color: whitesmoke;">
+        <p>Press Ok To Visit The Site</p>
   
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 90px;">
+        <button style="border-radius: 5px; background-color: red; border: none; width: 100px; height: 35px;" id="visit">Visit</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
   <!-- header code starts from here -->
 
   <header id="nav-head">
