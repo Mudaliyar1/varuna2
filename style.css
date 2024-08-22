@@ -482,8 +482,9 @@ body {
     flex-direction: row;
     margin-left: 30px;
     gap: 5px;
-    color: #ed1c24; 
+    accent-color: red;
 }
+
 #first-txt {
     margin-top: -50px;
     font-size: 22px;
