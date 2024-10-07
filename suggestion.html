@@ -21,24 +21,24 @@
     <link rel="stylesheet" href="suggestion.css">
 
     <script src="jquery-3.7.1.js"> </script>
-  <script>
-  $(document).ready(function () {
-    $("#hamburger").click(function () {
-              $("#hamburger-slide").show();
-              $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", "position": "absolute", "top": "-70px", "z-index": "10" });
-          });
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $("#hamburger-slide").show();
+                $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", "position": "absolute", "top": "-70px", "z-index": "10" });
+            });
 
-          $("#cross-icon").click(function(){
-              // $("#hamburger").hide();
-              $("#hamburger-slide").slideUp();
-              // $("#hamburger-slide").css({ "display": "none" });
-              // $("#hamburger").show();
-          });
-         
+            $("#cross-icon").click(function () {
+                // $("#hamburger").hide();
+                $("#hamburger-slide").slideUp();
+                // $("#hamburger-slide").css({ "display": "none" });
+                // $("#hamburger").show();
+            });
 
-          
-  });
-</script>
+
+
+        });
+    </script>
 </head>
 
 <body>
@@ -262,24 +262,25 @@
             <!-- <a href="hamburger.html"></a> -->
             <i class="fa-solid fa-bars" style="color: red;"></i>
             <div id="hamburger-slide" style="display: none; height: 100vh;">
-                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); height: 100vh;" id="hamburger-slide-part">
+                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); height: 100vh;"
+                    id="hamburger-slide-part">
                     <!-- <p style="color: black;">hello </p> -->
-      
-      
+
+
                     <div id="varuna-img">
-        
+
                     </div>
-                
+
                     <div id="cross-icon">
                         <i class="fa-solid fa-xmark" style="color: red;"></i>
                     </div>
-                
-                    
+
+
                     <nav id="menu">
                         <p class="menu-select">
                             <a href="index.html" class="menu-select">Home</a>
                         </p>
-                        
+
                         <!-- <select name="menu" class="menu-select">
                             <option value="about"><a href="about-varuna.html">About Varuna</a></option>
                             <option value="about us">About us</option>
@@ -296,115 +297,131 @@
                         <select name="menu" class="menu-select">
                             <option value="media"><a href="media.html">Media</a></option>
                         </select> -->
-                
-                
-                
+
+
+
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              About varuna
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About varuna
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
-                              <li><a class="dropdown-item" href="about-company.html">About us</a></li>
-                              <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
-                              <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
-                              <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
-                              <li><a class="dropdown-item" href="company-policy.html">Company Policies</a></li>
-                              <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+                                <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
+                                <li><a class="dropdown-item" href="about-company.html">About us</a></li>
+                                <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
+                                <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
+                                <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
+                                <li><a class="dropdown-item" href="company-policy.html">Company Policies</a></li>
+                                <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
                             </ul>
-                          </div>
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Products
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Products.html">Products</a></li>
-                              <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible <br> Pumps</a></li>
-                              <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible <br> Pumps</a></li>
-                              <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock <br> Pumps</a></li>
-                              <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy Efficent-Induction <br> Mototrs</a></li>
-                              <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal Regenerative <br> Self Priming Pumps</a></li>
-                              <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a></li>
+                                <li><a class="dropdown-item" href="Products.html">Products</a></li>
+                                <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible <br>
+                                        Pumps</a></li>
+                                <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible <br>
+                                        Pumps</a></li>
+                                <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock
+                                        <br> Pumps</a></li>
+                                <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy
+                                        Efficent-Induction <br> Mototrs</a></li>
+                                <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal
+                                        Regenerative <br> Self Priming Pumps</a></li>
+                                <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a>
+                                </li>
                             </ul>
-                          </div>
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Applications
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Applications
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
-                              <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
-                              <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a></li>
-                              <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
-                              <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
+                                <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
+                                <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                                <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
+                                <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
                             </ul>
-                          </div>
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Career
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Career
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Career.html">Career</a></li>
-                              <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
-                              <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
+                                <li><a class="dropdown-item" href="Career.html">Career</a></li>
+                                <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
+                                <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
                             </ul>
-                          </div>
-                
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Media
+                        </div>
+
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Media.html">Media</a></li>
-                              <li><a class="dropdown-item" href="Events.html">Events</a></li>
-                              <li><a class="dropdown-item" href="News.html">News</a></li>
-                              <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="Media.html">Media</a></li>
+                                <li><a class="dropdown-item" href="Events.html">Events</a></li>
+                                <li><a class="dropdown-item" href="News.html">News</a></li>
+                                <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
                             </ul>
-                          </div>
-                
-                
+                        </div>
+
+
                         <p class="menu">
                             <a href="csr.html" class="menu-select">CSR</a>
                         </p>
-                
+
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Contact
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
-                              <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
-                              <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
-                              <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
-                              <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a></li>
-                              <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
+                                <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
+                                <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
+                                <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
+                                <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
                             </ul>
-                          </div>
-                       </div>
-                
-                       <div class="shop-cart">
-                        <p class="s-c"><a href="" style="text-decoration: none; color: red;">Shop</a></p>
-                        <p class="s-c"><a href="addtocart.html" style="text-decoration: none; color: red;">Add to Cart</a></p>
                         </div>
-                
-                        <!-- <select name="menu" class="menu-select">
+                </div>
+
+                <div class="shop-cart">
+                    <p class="s-c"><a href="" style="text-decoration: none; color: red;">Shop</a></p>
+                    <p class="s-c"><a href="addtocart.html" style="text-decoration: none; color: red;">Add to Cart</a>
+                    </p>
+                </div>
+
+                <!-- <select name="menu" class="menu-select">
                             <option value="contact"><a href="contact.html">Contact</a></option>
                         </select> -->
-                
-                
-                    </nav>
-                
-                    <div id="reg-log">
-                      <p class="sign"><a href="suggestion.html" style="text-decoration: none; color: red;">Suggestion</a></p>
-                      <p class="sign"><a href="login.html" style="text-decoration: none; color: red;">Login</a></p>
-                    </div>
+
+
+                </nav>
+
+                <div id="reg-log">
+                    <p class="sign"><a href="suggestion.html" style="text-decoration: none; color: red;">Suggestion</a>
+                    </p>
+                    <p class="sign"><a href="login.html" style="text-decoration: none; color: red;">Login</a></p>
                 </div>
             </div>
-      
+        </div>
+
         </div>
     </section>
 
@@ -417,85 +434,102 @@
 
     <main>
 
-        <div style="text-align: center; margin-top: 100px;">
-            <h4>
-                Product Suggestion Box
-            </h4>
-        </div>
-
-
-        <div style="margin-left: 50px; margin-top: 90px; ">
-            <form action="">
-                <label for="">Name :</label><br>
-                <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br> <br>
-                <label for="">Email :</label><br>
-                <input type="email" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Phone Number :</label><br>
-                <input type="number" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Company (if applicable) :</label><br>
-                <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Type of Product :</label><br>
-                <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Voltage Requirement :</label><br>
-                <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Power Capacity :</label><br>
-                <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Special Features :</label><br>
-                <textarea name="" id="" style="width: 60vw; border: 1px solid  black; border-radius: 3px;"></textarea>
-                <br><br>
-                <label for="">Quantity :</label><br>
-                <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                <br><br>
-                <label for="">Additional Comments :</label><br>
-                <textarea name="" id="" style="width: 60vw; border: 1px solid  black; border-radius: 3px;"></textarea>
-
-
-                <br><br>
-
-                <label for="contactMethod">Choose a contact method:</label>
-                <select id="contactMethod" onchange="handleContactMethod()">
-                    <option value="">--Select an option--</option>
-                    <option value="phone">Phone Number</option>
-                    <option value="email">Email</option>
-                </select>
-
-                <div id="contactInfo"></div>
-
-                <script>
-                    function handleContactMethod() {
-                        const contactMethod = document.getElementById('contactMethod').value;
-                        const contactInfoDiv = document.getElementById('contactInfo');
-
-                        contactInfoDiv.innerHTML = ''; // Clear previous content
-
-                        if (contactMethod === 'phone') {
-                            const phoneNumber = '+91-79-22777485'; // Example phone number
-                            const callLink = document.createElement('a');
-                            callLink.href = `tel:${phoneNumber}`;
-                            callLink.innerText = `Call us at ${phoneNumber}`;
-                            contactInfoDiv.appendChild(callLink);
-                        } else if (contactMethod === 'email') {
-                            const email = 'crm@lgmindia.com'; // Example email address
-                            const emailLink = document.createElement('a');
-                            emailLink.href = `mailto:${email}`;
-                            emailLink.innerText = `Email us at ${email}`;
-                            contactInfoDiv.appendChild(emailLink);
+        <!-- old code here  -->
+        <!-- <div>
+            <div style="text-align: center; margin-top: 100px;">
+                <h4>
+                    Product Suggestion Box
+                </h4>
+            </div>
+    
+    
+            <div style="margin-left: 50px; margin-top: 90px; ">
+                <form action="">
+                    <label for="">Name :</label><br>
+                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br> <br>
+                    <label for="">Email :</label><br>
+                    <input type="email" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Phone Number :</label><br>
+                    <input type="number" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Company (if applicable) :</label><br>
+                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Type of Product :</label><br>
+                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Voltage Requirement :</label><br>
+                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Power Capacity :</label><br>
+                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Special Features :</label><br>
+                    <textarea name="" id="" style="width: 60vw; border: 1px solid  black; border-radius: 3px;"></textarea>
+                    <br><br>
+                    <label for="">Quantity :</label><br>
+                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
+                    <br><br>
+                    <label for="">Additional Comments :</label><br>
+                    <textarea name="" id="" style="width: 60vw; border: 1px solid  black; border-radius: 3px;"></textarea>
+    
+    
+                    <br><br>
+    
+                    <label for="contactMethod">Choose a contact method:</label>
+                    <select id="contactMethod" onchange="handleContactMethod()">
+                        <option value="">--Select an option--</option>
+                        <option value="phone">Phone Number</option>
+                        <option value="email">Email</option>
+                    </select>
+    
+                    <div id="contactInfo"></div>
+    
+                    <script>
+                        function handleContactMethod() {
+                            const contactMethod = document.getElementById('contactMethod').value;
+                            const contactInfoDiv = document.getElementById('contactInfo');
+    
+                            contactInfoDiv.innerHTML = ''; // Clear previous content
+    
+                            if (contactMethod === 'phone') {
+                                const phoneNumber = '+91-79-22777485'; // Example phone number
+                                const callLink = document.createElement('a');
+                                callLink.href = `tel:${phoneNumber}`;
+                                callLink.innerText = `Call us at ${phoneNumber}`;
+                                contactInfoDiv.appendChild(callLink);
+                            } else if (contactMethod === 'email') {
+                                const email = 'crm@lgmindia.com'; // Example email address
+                                const emailLink = document.createElement('a');
+                                emailLink.href = `mailto:${email}`;
+                                emailLink.innerText = `Email us at ${email}`;
+                                contactInfoDiv.appendChild(emailLink);
+                            }
                         }
-                    }
-                </script>
-                <br><br>
+                    </script>
+                    <br><br>
+    
+                    <input type="submit"
+                        style="height: 40px; width: 100px; background-color: red; color: white; border: 2px solid transparent; border-radius: 5px;">
+                </form>
+            </div>
+    
+    
+        </div> -->
+        <!-- old code completed -->
 
-                <input type="submit"
-                    style="height: 40px; width: 100px; background-color: red; color: white; border: 2px solid transparent; border-radius: 5px;">
-            </form>
+
+        <!-- new code starts from here -->
+
+
+        <h4 style="padding: 0px 10px;">Personal Information*</h4>
+
+        <div id="sec-1st">
+            
         </div>
+
     </main>
 
 
