@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -25,7 +30,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: -8px;
+    /* margin-left: -8px; */
 }
 
 #globe {
@@ -436,12 +441,64 @@ body {
     }
 }
 
-/* menu for new ends here*/
 
+
+/* #sec-1st{
+    width: 90dvw;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+}
+   
+#form-1{
+    display: flex;
+    justify-content: center;
+}
+#sec-2nd{
+    width: 90dvw;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+}
+   
+#form-2{
+    display: flex;
+    justify-content: center;
+} */
+
+form span{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 18px;
+}
 
 input{
-    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
 }
+select{
+    border-radius: 5px;
+    margin: 10px;
+    width: 184px;
+    height: 27px;
+}
+
+button{
+    width: 100px;
+    border: none;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+/* menu for new ends here*/
+
 
 
 

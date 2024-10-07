@@ -523,12 +523,124 @@
 
         <!-- new code starts from here -->
 
-
+        <!-- <br><br><br>
         <h4 style="padding: 0px 10px;">Personal Information*</h4>
-
+        <br>
         <div id="sec-1st">
-            
+            <div id="form-1">
+                <form action="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="number" placeholder="Contact No." required>
+                    <input type="email" placeholder="Email id." required>
+                    <input type="text" placeholder="State" required>
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="District" required>
+                    <input list="Buisness-Type" name="Buisness-Type" placeholder="Buisness-Type">
+                    <datalist id="Buisness-Type">
+                        <option value="Farmer">Farmer</option>
+                        <option value="Residental">Residental</option>
+                    </datalist>
+
+                    <input list="Find-form" name="find-form" placeholder="Find Form">
+                    <datalist id="Find-form">
+                        <option value="Farmer">Farmer</option>
+                        <option value="Residental">Residental</option>
+                    </datalist>
+                </form>
+            </div>
         </div>
+
+
+        <br><br><br>
+        <h4 style="padding: 0px 10px;">Requirement Of Pumps*</h4>
+        <br>
+        <div id="sec-2nd">
+            <div id="form-2">
+                <form action="">
+                    <input type="text" placeholder="Type Of Products" required>
+                    <input type="text" placeholder="Head (Distance)" required><span>?</span>
+
+                    <input list="flow" name="flow" placeholder="Flow">
+                    <datalist id="flow">
+                        <option value="Farmer">Farmer</option>
+                        <option value="Residental">Residental</option>
+                    </datalist>
+                    
+                    <input list="pipe-size" name="pipe-size" placeholder="Pipe Size">
+                    <datalist id="pipe-size">
+                        <option value="Farmer">Farmer</option>
+                        <option value="Residental">Residental</option>
+                    </datalist>
+                    
+                    <select name="" id="phase">
+                        <option value="">Phase</option>
+                        <option value="">Single Phase</option>
+                        <option value="">Multi-dimension Phase</option>
+                    </select>
+
+                </form>
+            </div>
+        </div> -->
+
+
+        <form action="">
+
+            <br><br><br>
+            <h4 style="padding: 0px 10px;">Personal Information*</h4>
+            <input type="text" placeholder="Name" required>
+            <input type="number" placeholder="Contact No." required>
+            <input type="email" placeholder="Email id." required>
+            <input type="text" placeholder="State" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="District" required>
+            <input list="Buisness-Type" name="Buisness-Type" placeholder="Buisness-Type" required>
+            <datalist id="Buisness-Type">
+                <option value="Farmer">Farmer</option>
+                <option value="Residental">Residental</option>
+            </datalist>
+
+            <input list="Find-form" name="find-form" placeholder="Find Form" required>
+            <datalist id="Find-form">
+                <option value="Farmer">Farmer</option>
+                <option value="Residental">Residental</option>
+            </datalist>
+
+
+            <br><br><br>
+            <h4 style="padding: 0px 10px;">Requirement Of Pumps*</h4>
+            <br>
+            <input type="text" placeholder="Type Of Products" required>
+            <input type="text" placeholder="Head (Distance)" required><span>?</span>
+
+            <input list="flow" name="flow" placeholder="Flow" required>
+            <datalist id="flow">
+                <option value="Farmer">Farmer</option>
+                <option value="Residental">Residental</option>
+            </datalist>
+
+            <select id="pipe-size" required>
+                <option value="pipe-size">Pipe-size</option>
+                <option value="110">110(mm)</option>
+                <option value="160">160(mm)</option>
+                <option value="200">200(mm)</option>
+            </select>
+
+            <select name="" id="phase" required>
+                <option value="">Phase</option>
+                <option value="">Single Phase</option>
+                <option value="">Multi-dimension Phase</option>
+            </select>
+
+            <br><br>
+
+            <h4 style="padding: 0px 10px;">Frequency*</h4>
+            <input type="radio" name="radio" checked><label>50Hz</label>
+            <input type="radio" name="radio"><label>60Hz</label>
+            <br><br>
+            <div>
+                <button>submit</button>
+            </div>
+        </form>
 
     </main>
 
