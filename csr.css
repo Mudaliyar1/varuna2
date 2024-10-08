@@ -1,22 +1,27 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 7px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: white;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: red;
     border-radius: 10px;
 }
 
 
-#nav-head{
+#body-main>img{
+    height: 7-vw;
+}
+
+
+#nav-head {
     width: 100vw;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.927);
@@ -26,7 +31,7 @@ body{
     /* margin-left: -8px; */
 }
 
-#globe{
+#globe {
     display: flex;
     flex-direction: row;
     border: 2px solid transparent;
@@ -41,7 +46,7 @@ body{
 }
 
 
-#txt-globe{
+#txt-globe {
     font-size: 16px;
     color: white;
     margin: 3px 0px 0px 5px;
@@ -64,18 +69,18 @@ body{
 }
 
 
-#txt-globe:hover{
+#txt-globe:hover {
     color: #ed1c24;
 }
 
 
 
-#nav-global{
+#nav-global {
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 30px;
     margin-top: 3px;
-    
+
 }
 
 @media(max-width: 1150px) {
@@ -87,7 +92,7 @@ body{
 }
 
 
-#nav-line{
+#nav-line {
     color: white;
     display: flex;
     align-items: center;
@@ -95,8 +100,8 @@ body{
     margin-left: 20px;
 }
 
-@media(max-width: 490px){
-    #nav-line{
+@media(max-width: 490px) {
+    #nav-line {
         margin-left: 7px;
 
     }
@@ -112,14 +117,14 @@ body{
 }
 
 
-#nav-img{
+#nav-img {
     width: 28px;
     height: 18.67px;
     background-image: url("ind-flag.webp");
     background-size: cover;
     margin-left: 45px;
     margin-top: 4px;
-    
+
 }
 
 @media(max-width: 1150px) {
@@ -131,7 +136,7 @@ body{
 }
 
 
-#nav-location{
+#nav-location {
     color: #FFFFFF;
     text-decoration: none;
     display: flex;
@@ -140,12 +145,13 @@ body{
 
 }
 
-#nav-domestic{
+#nav-domestic {
     margin: 3px 0px 0px 5px;
 
 
 }
-#nav-domestic:hover{
+
+#nav-domestic:hover {
     color: #ed1c24;
 }
 
@@ -166,7 +172,7 @@ body{
 
 
 
-#nav-service{
+#nav-service {
     width: 177px;
     height: 55px;
     background-color: #ed1c24;
@@ -177,11 +183,11 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    
+
 }
 
-@media (max-width : 490px){
-    #nav-service{
+@media (max-width : 490px) {
+    #nav-service {
         right: 30px;
     }
 
@@ -216,12 +222,12 @@ body{
 
 
 
-#nav-service:hover{
+#nav-service:hover {
     background-color: white;
     color: grey;
 }
 
-#txt-service{
+#txt-service {
     font-size: 14px;
     margin-left: 10px;
     justify-content: center;
@@ -237,7 +243,9 @@ body{
 
 /* main css code starts here */
 
-.btn , .btn-secondary, .dropdown-toggle{
+.btn,
+.btn-secondary,
+.dropdown-toggle {
     background-color: transparent;
     color: black;
     border: 0px solid transparent;
@@ -245,31 +253,33 @@ body{
 
 }
 
-.btn , .btn-secondary, .dropdown-toggle:hover{
+.btn,
+.btn-secondary,
+.dropdown-toggle:hover {
     background-color: transparent;
     border: 0px solid transparent;
     color: black;
-    
+
 }
 
-.btn:hover{
+.btn:hover {
     color: #ed1c24;
 }
 
 
-#body-section{
+#body-section {
     height: 140px;
     width: 100vw;
     background-color: white;
     position: sticky;
     top: -1px;
     padding-top: 20px;
-    box-shadow: 2px 2px 2px  grey ;
+    box-shadow: 2px 2px 2px grey;
     z-index: 1;
 }
 
-@media(max-width:1200px){
-    #body-section{
+@media(max-width:1200px) {
+    #body-section {
         height: 100px;
     }
 }
@@ -282,7 +292,7 @@ body{
 
 
 
-#varuna-logo{
+#varuna-logo {
     width: 200px;
     height: 173px;
     background-image: url("main-logo.png");
@@ -291,18 +301,19 @@ body{
     position: absolute;
     top: 50px;
     left: 50px;
-    
+
 
 }
 
-@media(max-width:1200px){
-    #varuna-logo{
+@media(max-width:1200px) {
+    #varuna-logo {
         width: 120px;
         height: 80px;
         top: 30px;
         left: 3px;
     }
 }
+
 /* @media(min-width:1200px){
     #varuna-logo{
         width: 120px;
@@ -313,33 +324,35 @@ body{
 } */
 
 
-#main-logo{
+#main-logo {
     width: 196px;
     height: 60px;
     opacity: 0;
 
 }
-@media(min-width:370px){
-    #main-logo{
+
+@media(min-width:370px) {
+    #main-logo {
         width: 170px;
     }
 }
 
 
-#nav-menu{
+#nav-menu {
     display: flex;
     flex-direction: row;
     margin-left: 360px;
     gap: 25px;
     padding-top: 20px;
 }
-@media(max-width: 1201px){
-    #nav-menu{
+
+@media(max-width: 1201px) {
+    #nav-menu {
         display: none;
     }
 }
 
-.menu-select{
+.menu-select {
     border: 0px transparent;
     font-size: 17px;
     text-decoration: none;
@@ -347,12 +360,12 @@ body{
     background-color: transparent;
 }
 
-.menu-select:hover{
+.menu-select:hover {
     color: #ed1c24;
 }
 
 
-.menu-contact{
+.menu-contact {
     text-decoration: none;
     font-size: 17px;
     color: #000000;
@@ -362,32 +375,34 @@ body{
     margin-left: 900px;
     border: transparent;
 }
-@media(max-width: 1201px){
-    .menu-contact{
+
+@media(max-width: 1201px) {
+    .menu-contact {
 
         display: none;
     }
 }
 
 
-@media(max-width: 800px){
-    .menu-select{
+@media(max-width: 800px) {
+    .menu-select {
         /* opacity: 0; */
         display: none;
     }
-} 
+}
 
 
 
-#contact-icon{
+#contact-icon {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 150px;
     margin-top: -69px;
     font-size: 20px;
 }
-@media(max-width:1200px){
-    #contact-icon{
+
+@media(max-width:1200px) {
+    #contact-icon {
         margin-top: 30px;
     }
 }
@@ -399,18 +414,18 @@ body{
 }
 
 
-#search-icon{
+#search-icon {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 95px;
-    
+
     margin-top: -33px;
     font-size: 23px;
 }
 
 
 
-#hamburger{
+#hamburger {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 30px;
@@ -418,8 +433,8 @@ body{
     margin-top: -39px;
 }
 
-@media(min-width:1202px){
-    #hamburger{
+@media(min-width:1202px) {
+    #hamburger {
         display: none;
     }
 }
