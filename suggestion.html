@@ -21,28 +21,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="suggestion.css">
     <link rel="stylesheet" href="utility.css">
-
+    <link rel="stylesheet" href="suggestion-calc.css">
+    <script src="suggestion.js"></script>
 
     <script src="jquery-3.7.1.js"> </script>
-  <script>
-  $(document).ready(function () {
-    $("#hamburger").click(function () {
-              $("#hamburger-slide").show();
-              $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", "position": "absolute", "top": "-70px", "z-index": "10" });
-          });
 
-          $("#cross-icon").click(function(){
-              // $("#hamburger").hide();
-              $("#hamburger-slide").slideUp();
-              // $("#hamburger-slide").css({ "display": "none" });
-              // $("#hamburger").show();
-          });
-          
-  });
-</script>
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $("#hamburger-slide").show();
+                $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", "position": "absolute", "top": "-70px", "z-index": "10" });
+            });
+
+            $("#cross-icon").click(function () {
+                // $("#hamburger").hide();
+                $("#hamburger-slide").slideUp();
+                // $("#hamburger-slide").css({ "display": "none" });
+                // $("#hamburger").show();
+            });
+
+        });
+    </script>
 </head>
 
-<body>
+<body id="body">
     <header id="nav-head">
 
         <div id="globe">
@@ -260,24 +262,25 @@
             <!-- <a href="hamburger.html"></a> -->
             <i class="fa-solid fa-bars" style="color: red;"></i>
             <div id="hamburger-slide" style="display: none; height: 100vh;">
-                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); height: 100vh;" id="hamburger-slide-part">
+                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); height: 100vh;"
+                    id="hamburger-slide-part">
                     <!-- <p style="color: black;">hello </p> -->
-      
-      
+
+
                     <div id="varuna-img">
-        
+
                     </div>
-                
+
                     <div id="cross-icon">
                         <i class="fa-solid fa-xmark" style="color: red;"></i>
                     </div>
-                
-                    
+
+
                     <nav id="menu">
                         <p class="menu-select">
                             <a href="index.html" class="menu-select">Home</a>
                         </p>
-                        
+
                         <!-- <select name="menu" class="menu-select">
                             <option value="about"><a href="about-varuna.html">About Varuna</a></option>
                             <option value="about us">About us</option>
@@ -294,115 +297,131 @@
                         <select name="menu" class="menu-select">
                             <option value="media"><a href="media.html">Media</a></option>
                         </select> -->
-                
-                
-                
+
+
+
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              About varuna
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About varuna
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
-                              <li><a class="dropdown-item" href="about-company.html">About us</a></li>
-                              <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
-                              <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
-                              <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
-                              <li><a class="dropdown-item" href="company-policy.html">Company Policies</a></li>
-                              <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+                                <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
+                                <li><a class="dropdown-item" href="about-company.html">About us</a></li>
+                                <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
+                                <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
+                                <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
+                                <li><a class="dropdown-item" href="company-policy.html">Company Policies</a></li>
+                                <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
                             </ul>
-                          </div>
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Products
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Products.html">Products</a></li>
-                              <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible <br> Pumps</a></li>
-                              <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible <br> Pumps</a></li>
-                              <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock <br> Pumps</a></li>
-                              <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy Efficent-Induction <br> Mototrs</a></li>
-                              <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal Regenerative <br> Self Priming Pumps</a></li>
-                              <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a></li>
+                                <li><a class="dropdown-item" href="Products.html">Products</a></li>
+                                <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible <br>
+                                        Pumps</a></li>
+                                <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible <br>
+                                        Pumps</a></li>
+                                <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock
+                                        <br> Pumps</a></li>
+                                <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy
+                                        Efficent-Induction <br> Mototrs</a></li>
+                                <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal
+                                        Regenerative <br> Self Priming Pumps</a></li>
+                                <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a>
+                                </li>
                             </ul>
-                          </div>
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Applications
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Applications
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
-                              <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
-                              <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a></li>
-                              <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
-                              <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
+                                <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
+                                <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                                <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
+                                <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
                             </ul>
-                          </div>
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Career
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Career
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Career.html">Career</a></li>
-                              <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
-                              <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
+                                <li><a class="dropdown-item" href="Career.html">Career</a></li>
+                                <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
+                                <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
                             </ul>
-                          </div>
-                
-                
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Media
+                        </div>
+
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Media.html">Media</a></li>
-                              <li><a class="dropdown-item" href="Events.html">Events</a></li>
-                              <li><a class="dropdown-item" href="News.html">News</a></li>
-                              <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="Media.html">Media</a></li>
+                                <li><a class="dropdown-item" href="Events.html">Events</a></li>
+                                <li><a class="dropdown-item" href="News.html">News</a></li>
+                                <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
                             </ul>
-                          </div>
-                
-                
+                        </div>
+
+
                         <p class="menu">
                             <a href="csr.html" class="menu-select">CSR</a>
                         </p>
-                
+
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Contact
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
-                              <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
-                              <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
-                              <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
-                              <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a></li>
-                              <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
+                                <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
+                                <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
+                                <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
+                                <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
                             </ul>
-                          </div>
-                       </div>
-                
-                       <div class="shop-cart">
-                        <p class="s-c"><a href="" style="text-decoration: none; color: red;">Shop</a></p>
-                        <p class="s-c"><a href="addtocart.html" style="text-decoration: none; color: red;">Add to Cart</a></p>
                         </div>
-                
-                        <!-- <select name="menu" class="menu-select">
+                </div>
+
+                <div class="shop-cart">
+                    <p class="s-c"><a href="" style="text-decoration: none; color: red;">Shop</a></p>
+                    <p class="s-c"><a href="addtocart.html" style="text-decoration: none; color: red;">Add to Cart</a>
+                    </p>
+                </div>
+
+                <!-- <select name="menu" class="menu-select">
                             <option value="contact"><a href="contact.html">Contact</a></option>
                         </select> -->
-                
-                
-                    </nav>
-                
-                    <div id="reg-log">
-                      <p class="sign"><a href="suggestion.html" style="text-decoration: none; color: red;">Suggestion</a></p>
-                      <p class="sign"><a href="login.html" style="text-decoration: none; color: red;">Login</a></p>
-                    </div>
+
+
+                </nav>
+
+                <div id="reg-log">
+                    <p class="sign"><a href="suggestion.html" style="text-decoration: none; color: red;">Suggestion</a>
+                    </p>
+                    <p class="sign"><a href="login.html" style="text-decoration: none; color: red;">Login</a></p>
                 </div>
             </div>
-      
+        </div>
+
         </div>
     </section>
 
@@ -416,8 +435,8 @@
 
     <main>
 
-        
-        
+
+
         <form action="">
 
             <br><br><br>
@@ -445,8 +464,9 @@
             <h4 style="padding: 0px 10px;">Requirement Of Pumps*</h4>
             <br>
             <input type="text" placeholder="Type Of Products" required>
-            <input type="text" placeholder="Head (Distance)" required><span>?</span>
+            <input type="text" placeholder="Head (Distance)" required><span id="calc" onclick="opens()">?</span>
 
+            
             <input list="flow" name="flow" placeholder="Flow" required>
             <datalist id="flow">
                 <option value="Farmer">Farmer</option>
@@ -476,6 +496,95 @@
                 <button id="button">submit</button>
             </div>
         </form>
+
+        <div id="calculator">
+            <div id="calc-part">
+                    <span id="calc-cross" onclick="closes()">X</span>
+                <h1>Pump Calculator</h1>
+
+                <label for="flowRate">Flow Rate (gpm):</label>
+                <input type="number" id="flowRate" required>
+
+                <label for="pipeLength">Total Pipe Length (feet):</label>
+                <input type="number" id="pipeLength" required>
+
+                <label for="pipeDiameter">Nominal Pipe Diameter (inches):</label>
+                <input type="number" id="pipeDiameter" required>
+
+                <label for="totalLift">Total Pumping Lift (feet):</label>
+                <input type="number" id="totalLift" required>
+
+                <label for="miscHeadLoss">Miscellaneous Head Loss (feet):</label>
+                <input type="number" id="miscHeadLoss" required>
+
+                <label for="fitting45">Number of 45° Elbows:</label>
+                <input type="number" id="fitting45" required value="0">
+
+                <label for="fitting90">Number of 90° Elbows:</label>
+                <input type="number" id="fitting90" required value="0">
+
+                <label for="fittingTee">Number of Tees:</label>
+                <input type="number" id="fittingTee" required value="0">
+
+                <button onclick="calculate()">Calculate</button>
+
+                <h2>Results</h2>
+                <div id="results"></div>
+
+                <script>
+                    function calculate() {
+                        // Get input values
+                        const flowRateGPM = parseFloat(document.getElementById('flowRate').value);
+                        const pipeLength = parseFloat(document.getElementById('pipeLength').value);
+                        const pipeDiameterInches = parseFloat(document.getElementById('pipeDiameter').value);
+                        const totalLift = parseFloat(document.getElementById('totalLift').value);
+                        const miscHeadLoss = parseFloat(document.getElementById('miscHeadLoss').value);
+                        const fitting45 = parseInt(document.getElementById('fitting45').value);
+                        const fitting90 = parseInt(document.getElementById('fitting90').value);
+                        const fittingTee = parseInt(document.getElementById('fittingTee').value);
+
+                        // Convert flow rate to cubic feet per second
+                        const flowRateCFS = (flowRateGPM * 0.133681) / 60; // gpm to ft³/s
+
+                        // Convert diameter to feet
+                        const pipeDiameterFeet = pipeDiameterInches / 12;
+
+                        // Calculate cross-sectional area
+                        const area = Math.PI * Math.pow(pipeDiameterFeet / 2, 2);
+
+                        // Calculate flow velocity
+                        const velocity = flowRateCFS / area;
+
+                        // Calculate head loss due to pipe friction (using Darcy-Weisbach equation)
+                        const frictionFactor = 0.02; // Assumed constant for turbulent flow
+                        const headLossPipe = frictionFactor * (pipeLength / pipeDiameterFeet) * Math.pow(velocity, 2) / (2 * 32.2); // Convert g to ft/s²
+
+                        // Calculate head loss due to fittings
+                        const fittingLoss45 = fitting45 * 0.3 * Math.pow(velocity, 2) / (2 * 32.2);
+                        const fittingLoss90 = fitting90 * 0.5 * Math.pow(velocity, 2) / (2 * 32.2);
+                        const fittingLossTee = fittingTee * 0.4 * Math.pow(velocity, 2) / (2 * 32.2);
+                        const fittingHeadLoss = fittingLoss45 + fittingLoss90 + fittingLossTee;
+
+                        // Total pump head required
+                        const totalPumpHead = totalLift + headLossPipe + fittingHeadLoss + miscHeadLoss;
+
+                        // Pressure loss (psi)
+                        const pressureLoss = totalPumpHead * 0.433; // Convert ft of water to psi (1 ft = 0.433 psi)
+
+                        // Display results
+                        document.getElementById('results').innerHTML = `
+            Flow Velocity: ${velocity.toFixed(2)} ft/s<br>
+            Pipe Head Loss: ${headLossPipe.toFixed(2)} feet<br>
+            Fitting Head Loss: ${fittingHeadLoss.toFixed(2)} feet<br>
+            Vertical Lift: ${totalLift} feet<br>
+            Miscellaneous Head Loss: ${miscHeadLoss} feet<br>
+            Total Pump Head Required: ${totalPumpHead.toFixed(2)} feet<br>
+            Pressure Loss: ${pressureLoss.toFixed(2)} psi
+        `;
+                    }
+                </script>
+            </div>
+        </div>
 
     </main>
 

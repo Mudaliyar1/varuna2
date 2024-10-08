@@ -16,7 +16,7 @@ body {
 }
 
 
-#body-main>img{
+#body-main>img {
     height: 7-vw;
 }
 
@@ -443,7 +443,10 @@ body {
 
 
 
-/* suggestion code here because  it's not working */
+
+
+
+/* suggestion code here because  it's not working on suggestion css file*/
 
 
 form span {
@@ -478,6 +481,25 @@ select {
     color: white;
     padding: 5px;
     text-align: center;
+
+}
+
+#calculator {
+    display: none;
+    position: absolute;
+    left: 7%;
+    top: 40%;
+    z-index: 10;
+}
+
+#calc-part {
+    overflow-y: scroll;
+
+    width: 90vw;
+    height: 70vh;
+    background-color: rgb(136, 128, 128);
+    border-radius: 10px;
+
 
 }
 
