@@ -18,6 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="suggestion.css">
     <link rel="stylesheet" href="utility.css">
 
@@ -36,8 +37,6 @@
               // $("#hamburger-slide").css({ "display": "none" });
               // $("#hamburger").show();
           });
-         
-
           
   });
 </script>
@@ -417,155 +416,8 @@
 
     <main>
 
-        <!-- old code here  -->
-        <!-- <div>
-            <div style="text-align: center; margin-top: 100px;">
-                <h4>
-                    Product Suggestion Box
-                </h4>
-            </div>
-    
-    
-            <div style="margin-left: 50px; margin-top: 90px; ">
-                <form action="">
-                    <label for="">Name :</label><br>
-                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br> <br>
-                    <label for="">Email :</label><br>
-                    <input type="email" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Phone Number :</label><br>
-                    <input type="number" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Company (if applicable) :</label><br>
-                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Type of Product :</label><br>
-                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Voltage Requirement :</label><br>
-                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Power Capacity :</label><br>
-                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Special Features :</label><br>
-                    <textarea name="" id="" style="width: 60vw; border: 1px solid  black; border-radius: 3px;"></textarea>
-                    <br><br>
-                    <label for="">Quantity :</label><br>
-                    <input type="text" required style="width: 60vw; border: 1px solid  red; border-radius: 3px;">
-                    <br><br>
-                    <label for="">Additional Comments :</label><br>
-                    <textarea name="" id="" style="width: 60vw; border: 1px solid  black; border-radius: 3px;"></textarea>
-    
-    
-                    <br><br>
-    
-                    <label for="contactMethod">Choose a contact method:</label>
-                    <select id="contactMethod" onchange="handleContactMethod()">
-                        <option value="">--Select an option--</option>
-                        <option value="phone">Phone Number</option>
-                        <option value="email">Email</option>
-                    </select>
-    
-                    <div id="contactInfo"></div>
-    
-                    <script>
-                        function handleContactMethod() {
-                            const contactMethod = document.getElementById('contactMethod').value;
-                            const contactInfoDiv = document.getElementById('contactInfo');
-    
-                            contactInfoDiv.innerHTML = ''; // Clear previous content
-    
-                            if (contactMethod === 'phone') {
-                                const phoneNumber = '+91-79-22777485'; // Example phone number
-                                const callLink = document.createElement('a');
-                                callLink.href = `tel:${phoneNumber}`;
-                                callLink.innerText = `Call us at ${phoneNumber}`;
-                                contactInfoDiv.appendChild(callLink);
-                            } else if (contactMethod === 'email') {
-                                const email = 'crm@lgmindia.com'; // Example email address
-                                const emailLink = document.createElement('a');
-                                emailLink.href = `mailto:${email}`;
-                                emailLink.innerText = `Email us at ${email}`;
-                                contactInfoDiv.appendChild(emailLink);
-                            }
-                        }
-                    </script>
-                    <br><br>
-    
-                    <input type="submit"
-                        style="height: 40px; width: 100px; background-color: red; color: white; border: 2px solid transparent; border-radius: 5px;">
-                </form>
-            </div>
-    
-    
-        </div> -->
-        <!-- old code completed -->
-
-
-        <!-- new code starts from here -->
-
-        <!-- <br><br><br>
-        <h4 style="padding: 0px 10px;">Personal Information*</h4>
-        <br>
-        <div id="sec-1st">
-            <div id="form-1">
-                <form action="">
-                    <input type="text" placeholder="Name" required>
-                    <input type="number" placeholder="Contact No." required>
-                    <input type="email" placeholder="Email id." required>
-                    <input type="text" placeholder="State" required>
-                    <input type="text" placeholder="City" required>
-                    <input type="text" placeholder="District" required>
-                    <input list="Buisness-Type" name="Buisness-Type" placeholder="Buisness-Type">
-                    <datalist id="Buisness-Type">
-                        <option value="Farmer">Farmer</option>
-                        <option value="Residental">Residental</option>
-                    </datalist>
-
-                    <input list="Find-form" name="find-form" placeholder="Find Form">
-                    <datalist id="Find-form">
-                        <option value="Farmer">Farmer</option>
-                        <option value="Residental">Residental</option>
-                    </datalist>
-                </form>
-            </div>
-        </div>
-
-
-        <br><br><br>
-        <h4 style="padding: 0px 10px;">Requirement Of Pumps*</h4>
-        <br>
-        <div id="sec-2nd">
-            <div id="form-2">
-                <form action="">
-                    <input type="text" placeholder="Type Of Products" required>
-                    <input type="text" placeholder="Head (Distance)" required><span>?</span>
-
-                    <input list="flow" name="flow" placeholder="Flow">
-                    <datalist id="flow">
-                        <option value="Farmer">Farmer</option>
-                        <option value="Residental">Residental</option>
-                    </datalist>
-                    
-                    <input list="pipe-size" name="pipe-size" placeholder="Pipe Size">
-                    <datalist id="pipe-size">
-                        <option value="Farmer">Farmer</option>
-                        <option value="Residental">Residental</option>
-                    </datalist>
-                    
-                    <select name="" id="phase">
-                        <option value="">Phase</option>
-                        <option value="">Single Phase</option>
-                        <option value="">Multi-dimension Phase</option>
-                    </select>
-
-                </form>
-            </div>
-        </div> -->
-
-
+        
+        
         <form action="">
 
             <br><br><br>
@@ -621,7 +473,7 @@
             <input type="radio" name="radio"><label>60Hz</label>
             <br><br>
             <div>
-                <button>submit</button>
+                <button id="button">submit</button>
             </div>
         </form>
 

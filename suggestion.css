@@ -1,71 +1,11 @@
 
 
-
-/* #sec-1st{
-    width: 90dvw;
-    height: auto;
-    border: 1px solid red;
-    display: flex;
-    margin: 10px;
-    border-radius: 10px;
-}
-   
-#form-1{
-    display: flex;
-    justify-content: center;
-}
-#sec-2nd{
-    width: 90dvw;
-    height: auto;
-    border: 1px solid red;
-    display: flex;
-    margin: 10px;
-    border-radius: 10px;
-}
-   
-#form-2{
-    display: flex;
-    justify-content: center;
-} */
-
-form span{
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    padding: 5px;
-    font-size: 18px;
-}
-
-input{
-    border-radius: 5px;
-    margin: 10px;
-}
-select{
-    border-radius: 5px;
-    margin: 10px;
-    width: 184px;
-    height: 27px;
-}
-
-button{
-    width: 100px;
-    border: none;
-    background-color: red;
-   position: absolute;
-   left: 20%;
-   right: 50%;
-   transform: translate(-50% -50%);
-   border-radius: 10px;
-   color: white;
-   padding: 5px;
-   text-align: center;
-   
-}
-
-/* menu for new ends here*/
+/* suggestion code for css is on utility css file  */
 
 
 
+
+/* footer code  starts here */
 
 footer {
     width: 100vw;
@@ -132,14 +72,6 @@ footer {
     color: red;
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -454,34 +386,36 @@ footer {
         left: 305px;
     }
 }
+
 /* hamburger code here after changes */
 
 
-@media (max-width: 1202px){
+@media (max-width: 1202px) {
 
-    #cross-icon{
+    #cross-icon {
         display: flex;
         flex-direction: row-reverse;
         margin-right: 40px;
         margin-top: 0px;
         font-size: 30px;
     }
-    @media(max-width:470px){
-        #cross-icon{
+
+    @media(max-width:470px) {
+        #cross-icon {
             margin-right: 30px;
         }
     }
-    
-    @media(max-width:390px){
-        #cross-icon{
+
+    @media(max-width:390px) {
+        #cross-icon {
             margin-right: 20px;
         }
     }
-    
-    
-    
-    
-    #varuna-img{
+
+
+
+
+    #varuna-img {
         width: 300px;
         height: 100px;
         background-image: url("main-logo.png");
@@ -489,210 +423,212 @@ footer {
         background-repeat: no-repeat;
         margin-left: 150px;
         margin-top: 60px;
-    
+
     }
-    
-    @media(max-width:700px){
-        #varuna-img{
+
+    @media(max-width:700px) {
+        #varuna-img {
             width: 200px;
             height: 90px;
             margin-top: 100px;
             margin-left: 290px;
         }
     }
-    
-    @media(max-width:600px){
-        #varuna-img{
+
+    @media(max-width:600px) {
+        #varuna-img {
             width: 200px;
             height: 90px;
             margin-top: 150px;
             margin-left: 250px;
         }
     }
-    @media(max-width:500px){
-        #varuna-img{
+
+    @media(max-width:500px) {
+        #varuna-img {
             width: 200px;
             height: 90px;
             margin-top: 100px;
-    
+
         }
     }
-    
-    @media(max-width:470px){
-        #varuna-img{
+
+    @media(max-width:470px) {
+        #varuna-img {
             width: 200px;
             height: 90px;
             margin-left: 100px;
         }
     }
-    
-    @media(max-width:470px){
-        #varuna-img{
+
+    @media(max-width:470px) {
+        #varuna-img {
             width: 200px;
             height: 90px;
             margin-left: 70px;
         }
     }
-    
-    @media(max-width:1800px){
-        #varuna-img{
+
+    @media(max-width:1800px) {
+        #varuna-img {
             width: 200px;
             height: 90px;
             margin-left: 70px;
         }
     }
-    
-    
-    
-    
-    @media(min-width:700px){
-        #varuna-img{
+
+
+
+
+    @media(min-width:700px) {
+        #varuna-img {
             width: 200px;
             height: 190px;
             margin-left: 260px;
         }
     }
-    
-    
-    @media(min-width:900px){
-        #varuna-img{
+
+
+    @media(min-width:900px) {
+        #varuna-img {
             width: 300px;
             height: 150px;
             margin-left: 300px;
         }
     }
-    
-    
-    @media(min-width:1000px){
-        #varuna-img{
+
+
+    @media(min-width:1000px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 400px;
         }
     }
-    
-    @media(min-width:1200px){
-        #varuna-img{
+
+    @media(min-width:1200px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 500px;
         }
     }
-    
-    @media(min-width:1300px){
-        #varuna-img{
+
+    @media(min-width:1300px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 350px;
         }
     }
-    
-    @media(min-width:1400px){
-        #varuna-img{
+
+    @media(min-width:1400px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 430px;
         }
     }
-    
-    @media(min-width:1500px){
-        #varuna-img{
+
+    @media(min-width:1500px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 490px;
         }
     }
-    
-    @media(min-width:1600px){
-        #varuna-img{
+
+    @media(min-width:1600px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 560px;
         }
     }
-    
-    @media(min-width:1700px){
-        #varuna-img{
+
+    @media(min-width:1700px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
             margin-left: 630px;
         }
     }
-    
-    @media(min-width:1900px){
-        #varuna-img{
+
+    @media(min-width:1900px) {
+        #varuna-img {
             width: 300px;
             height: 190px;
         }
     }
-    
-    
-    
-    
-    
-    
-    #menu{
+
+
+
+
+
+
+    #menu {
         width: 600px;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top:60%;
+        top: 60%;
         left: 50%;
         gap: 10px;
-        transform: translate(-50%,-50%);
-        
-    
+        transform: translate(-50%, -50%);
+
+
     }
-    
-    @media(max-width:600px){
-        #menu{
+
+    @media(max-width:600px) {
+        #menu {
             width: 450px;
         }
     }
-    @media(max-width:530px){
-        #menu{
+
+    @media(max-width:530px) {
+        #menu {
             width: 400px;
         }
     }
-    
-    @media(max-width:450px){
-        #menu{
+
+    @media(max-width:450px) {
+        #menu {
             width: 350px;
         }
     }
-    
-    @media(min-width:900px){
-        #menu{
+
+    @media(min-width:900px) {
+        #menu {
             width: 600px;
         }
     }
-    
-    @media(min-width:1000px){
-        #menu{
+
+    @media(min-width:1000px) {
+        #menu {
             width: 750px;
         }
     }
-    
-    @media(min-width:1200px){
-        #menu{
+
+    @media(min-width:1200px) {
+        #menu {
             width: 850px;
         }
     }
-    
-    @media(min-width:1350px){
-        #menu{
+
+    @media(min-width:1350px) {
+        #menu {
             width: 950px;
         }
     }
-    
-    #drop{
+
+    #drop {
         background-color: transparent;
         color: black;
         border: 0px transparent;
     }
-    
-    
-    .menu-select{
+
+
+    .menu-select {
         border: 0px transparent;
         word-spacing: -10px;
         font-size: 20px;
@@ -702,8 +638,8 @@ footer {
         color: black;
         background-color: transparent;
     }
-    
-    .sign{
+
+    .sign {
         width: 100px;
         text-align: center;
         padding: 4px;
@@ -716,17 +652,17 @@ footer {
         border: 1px solid black;
         font-size: 16px;
     }
-    
-    #reg-log{
+
+    #reg-log {
         display: flex;
         position: absolute;
         left: 45%;
         top: 45%;
         gap: 10px;
-    
+
     }
-    
-    .shop-cart{
+
+    .shop-cart {
         text-decoration: none;
         margin-left: 10px;
         display: flex;
@@ -734,10 +670,10 @@ footer {
         top: 40%;
         left: 44%;
         gap: 10px;
-    
+
     }
-    
-    .s-c{
+
+    .s-c {
         text-decoration: none;
         color: red;
         height: 30px;
@@ -746,7 +682,7 @@ footer {
         border-radius: 10px;
         text-align: center;
         font-size: 16px;
-    
+
     }
-    
+
 }
