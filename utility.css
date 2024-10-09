@@ -437,7 +437,16 @@ body {
     #hamburger {
         display: none;
     }
+    
 }
 
 
+#dark-icon{
+    /* display: flex; */
+    color: black;
+}
 
+#day-icon{
+    display: none;
+    color: white;
+}

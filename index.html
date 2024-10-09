@@ -57,7 +57,7 @@
       //     $("#img1").hide();
       //   });
 
-      $("#visit").click(function(){
+      $("#visit").click(function () {
         $("#warning").hide();
       });
 
@@ -84,8 +84,6 @@
 </head>
 
 <body id="body">
-
-
   <!-- <div id="warning" style="width: 100vw; height: 100vh; background-color: whitesmoke;  position: fixed; z-index: 2;">
 
     <div style="display: flex; align-items: center; justify-content: center; margin-top: 90px; color: red;">
@@ -344,7 +342,7 @@
           </div>
 
           <div id="cross-icon">
-            <i class="fa-solid fa-xmark" style="color: red;"></i>
+            <i class="fa-solid fa-xmark" style="color: red; margin-top: -50px;"></i>
           </div>
 
 
@@ -582,8 +580,15 @@
     </script>
 
 
-
+    <span>
+      <i class="fa-solid fa-moon" id="dark-icon" style="margin-left: 40px; margin-top: 13px;" onclick="darks()"></i>
+    </span>
+    <span>
+      <i class="fa-solid fa-sun" id="day-icon" style="margin-left: 40px; margin-top: 13px;" onclick="dayss()"></i>
+    </span>
+    
     <div id="body-txt" style="margin-top: 80px;">
+
       <h2 id="first-txt">About <span>Varuna Electric</span></h2>
 
       <h2 id="nd2-txt">
@@ -653,7 +658,7 @@
       setInterval(function () {
         if (count1 < 1000) {
           count1 += 5; // increment by 1-5 every 1 second
-          counter1Element.textContent = count1.toLocaleString() + "+" + " "+"Motors"+"\n"+"Pumps";
+          counter1Element.textContent = count1.toLocaleString() + "+" + " " + "Motors" + "\n" + "Pumps";
         }
       }, 15); // increment every 10 milliseconds
 
