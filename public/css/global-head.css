@@ -117,7 +117,7 @@ body {
 #nav-img {
     width: 28px;
     height: 18.67px;
-    background-image: url("ind-flag.webp");
+    background-image: url("../img/ind-flag.webp");
     background-size: cover;
     margin-left: 45px;
     margin-top: 4px;
@@ -292,7 +292,7 @@ body {
 #varuna-logo {
     width: 200px;
     height: 173px;
-    background-image: url("main-logo.png");
+    background-image: url("../img/main-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
