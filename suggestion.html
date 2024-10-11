@@ -437,25 +437,25 @@
 
 
 
-        <form action="https://api.web3forms.com/submit" id="myForm" method="POST">
+        <form action="https://formspree.io/f/mwpkegln" id="myForm" method="POST">
 
             <input type="hidden" name="access_key" value="1ef959d5-c666-4263-9c17-11e080ffa78d">
 
             <br><br><br>
             <h4 style="padding: 0px 10px;">Personal Information*</h4>
-            <input type="text" placeholder="Name" required>
-            <input type="number" placeholder="Contact No." required>
-            <input type="email" placeholder="Email id." required>
-            <input type="text" placeholder="State" required>
-            <input type="text" placeholder="City" required>
-            <input type="text" placeholder="District" required>
-            <input list="Buisness-Type" name="Buisness-Type" placeholder="Buisness-Type" required>
+            <input type="text" placeholder="Name" required name="Name">
+            <input type="number" placeholder="Contact No." name="Mobile-No" required>
+            <input type="email" placeholder="Email id." name="Email" required>
+            <input type="text" placeholder="State" name="State" required>
+            <input type="text" placeholder="City" name="City" required>
+            <input type="text" placeholder="District" name="District" required>
+            <input list="Buisness-Type" name="Buisness-Type" name="Buisness-Type" placeholder="Buisness-Type" required>
             <datalist id="Buisness-Type">
                 <option value="Farmer">Farmer</option>
                 <option value="Residental">Residental</option>
             </datalist>
 
-            <input list="Find-form" name="find-form" placeholder="Find Form" required>
+            <input list="Find-form" name="find-form" placeholder="Find Form" required name="Find-form">
             <datalist id="Find-form">
                 <option value="Farmer">Farmer</option>
                 <option value="Residental">Residental</option>
@@ -465,25 +465,26 @@
             <br><br><br>
             <h4 style="padding: 0px 10px;">Requirement Of Pumps*</h4>
             <br>
-            <input type="text" placeholder="Type Of Products" required>
-            <input type="text" placeholder="Head (Distance)" id="result" required><span id="calc"
+            <input type="text" placeholder="Type Of Products" required name="Type-Of-Products">
+
+            <input type="text" placeholder="Head (Distance)" id="result" required name="Head"><span id="calc"
                 onclick="opens()">?</span>
 
 
-            <input list="flow" name="flow" placeholder="Flow" required>
+            <input list="flow" name="flow" placeholder="Flow" required name="Flow">
             <datalist id="flow">
                 <option value="Farmer">Farmer</option>
                 <option value="Residental">Residental</option>
             </datalist>
 
-            <select id="pipe-size" required>
+            <select id="pipe-size" required name="pipe-size">
                 <option value="pipe-size">Pipe-size</option>
                 <option value="110">110(mm)</option>
                 <option value="160">160(mm)</option>
                 <option value="200">200(mm)</option>
             </select>
 
-            <select name="" id="phase" required>
+            <select name="" id="phase" required name="phase">
                 <option value="">Phase</option>
                 <option value="">Single Phase</option>
                 <option value="">Multi-dimension Phase</option>
@@ -492,8 +493,8 @@
             <br><br>
 
             <h4 style="padding: 0px 10px;">Frequency*</h4>
-            <input type="radio" name="radio" checked><label>50Hz</label>
-            <input type="radio" name="radio"><label>60Hz</label>
+            <input type="radio" name="Frequency" required><label for="50Hz">50Hz</label>
+            <input type="radio" name="Frequency" required><label for="60Hz">60Hz</label>
             <br><br>
             <div>
                 <button id="button" type="submit">submit</button>
