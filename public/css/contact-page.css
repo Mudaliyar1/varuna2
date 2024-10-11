@@ -1,0 +1,54 @@
+#phone-number {
+    text-decoration: none;
+    transition: all 2s ease ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    width: 350px;
+    height: 50px;
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    border: 2px solid;
+    transition: all 2s ease;
+
+  }
+  #phone-number:hover{
+    box-shadow: 20px 20px 20px grey;
+
+  }
+  
+  
+  #cross-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 10px solid grey;
+    border-top:  10px solid black;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient();
+    animation: anima  2s ease-in-out  infinite ;
+
+  }
+
+  @keyframes anima{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+  
