@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="public/css/Address.css">
+    <link rel="stylesheet" href="public/css/utility.css">
+
+    <script src="jquery-3.7.1.js"> </script>
+  <script>
+  $(document).ready(function () {
+    $("#hamburger").click(function () {
+              $("#hamburger-slide").show();
+              $("#hamburger-slide").css({ "height": "150vh", "width": "100vw", "left": "0px", "background-color": "white", "position": "absolute", "top": "-70px", "z-index": "10" });
+          });
+
+          $("#cross-icon").click(function(){
+              // $("#hamburger").hide();
+              $("#hamburger-slide").slideUp();
+              // $("#hamburger-slide").css({ "display": "none" });
+              // $("#hamburger").show();
+          });
+         
+
+          
+  });
+</script>
+</head>
+
+<body>
+    <!-- header code starts from here -->
+
+    <header id="nav-head">
+
+        <div id="globe">
+            <a href="global-head.html" id="nav-global"><i class="fa-solid fa-earth-asia"
+                    style="font-size: 23px;"></i></a>
+            <a href="global-head.html" id="txt-globe">Global</a>
+        </div>
+
+        <div id="nav-line">
+            <i class="fa-solid fa-grip-lines-vertical" style="margin-left: 23px;"></i>
+        </div>
+
+        <a href="index.html" id="nav-location">
+            <div id="nav-img"> </div>
+            <p id="nav-domestic">Domestic</p>
+        </a>
+
+
+        <a href="Service-center.html" id="nav-service">
+            <i class="fa-solid fa-location-dot" style="font-size: 20px;"></i>
+            <p id="txt-service">Service Locator</p>
+        </a>
+
+    </header>
+
+    <section id="body-section">
+
+        <div id="varuna-logo">
+            <a href="index.html"><img src="public/img/main-logo.png" id="main-logo" alt=""></a>
+        </div>
+
+        <nav id="nav-menu">
+
+            <p class="menu-select">
+                <a href="index.html" class="menu-select">Home</a>
+            </p>
+
+
+            <!-- <select name="menu" class="menu-select">
+    <option value="about"><a href="about-varuna.html">About Varuna</a></option>
+    <option value="about us"><a href="hamburger.html">About us</a></option>
+</select>
+<select name="menu" class="menu-select">
+    <option value="product"><a href="product.html">Product</a></option>
+</select>
+<select name="menu" class="menu-select">
+    <option value="application"><a href="application.html">Application</a></option>
+</select>
+<select name="menu" class="menu-select">
+    <option value="career"><a href="career.html">Career</a></option>
+</select>
+<select name="menu" class="menu-select">
+    <option value="media"><a href="media.html">Media</a></option>
+</select> -->
+
+            <!-- dropdown list from bootstrap -->
+
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    About varuna
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="about-company.html">About us</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="company-policy.html">Conmpany Policies</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Products
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Products.html">Products</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible Pumps</a>
+                    </li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible Pumps</a>
+                    </li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock Pumps</a>
+                    </li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy Efficent-Induction
+                            Mototrs</a>
+                    </li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal Regenerative <br> Self
+                            Priming
+                            Pumps</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Applications
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Career
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Career.html">Career</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
+                </ul>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Media
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Media.html">Media</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Events.html">Events</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="News.html">News</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <p class="menu">
+                <a href="csr.html" class="menu-select">CSR</a>
+            </p>
+
+        </nav>
+
+
+
+
+        <div class="menu-contact">
+            <!-- <select name="menu" class="menu-contact">
+    <option value=""><a href="contact.html" class="menu-contact">Contact</a></option>
+</select> -->
+
+            <!-- dropdown list from bootstrap -->
+
+            <p style="margin-right: 30px;"><a href="login.html" style="text-decoration: none; color: black;">Login</a>
+            </p>
+
+            <p style="margin-right: 30px;"><a href="suggestion.html"
+                    style="text-decoration: none; color: black;">Suggestion</a>
+            </p>
+
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Contact
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div id="contact-icon">
+            <a href="contact-address.html"><i class="fa-solid fa-phone-volume" style="color: grey;"></i></a>
+        </div>
+
+        <div id="search-icon">
+            <a href="search-address.html"><i class="fa-solid fa-magnifying-glass" style="color: grey;"></i></a>
+        </div>
+
+
+        <div id="hamburger">
+            <!-- <a href="hamburger.html"></a> -->
+            <i class="fa-solid fa-bars" style="color: red;"></i>
+            <div id="hamburger-slide" style="display: none; height: 100vh;">
+                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); height: 100vh;" id="hamburger-slide-part">
+                    <!-- <p style="color: black;">hello </p> -->
+      
+      
+                    <div id="varuna-img">
+        
+                    </div>
+                
+                    <div id="cross-icon">
+                        <i class="fa-solid fa-xmark" style="color: red;"></i>
+                    </div>
+                
+                    
+                    <nav id="menu">
+                        <p class="menu-select">
+                            <a href="index.html" class="menu-select">Home</a>
+                        </p>
+                        
+                        <!-- <select name="menu" class="menu-select">
+                            <option value="about"><a href="about-varuna.html">About Varuna</a></option>
+                            <option value="about us">About us</option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="product"><a href="product.html">Product</a></option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="application"><a href="application.html">Application</a></option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="career"><a href="career.html">Career</a></option>
+                        </select>
+                        <select name="menu" class="menu-select">
+                            <option value="media"><a href="media.html">Media</a></option>
+                        </select> -->
+                
+                
+                
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About varuna
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about-varuna.html">About Varuna</a></li>
+                              <li><a class="dropdown-item" href="about-company.html">About us</a></li>
+                              <li><a class="dropdown-item" href="bod.html">Board Of Directors</a></li>
+                              <li><a class="dropdown-item" href="milestone.html">Milestone</a></li>
+                              <li><a class="dropdown-item" href="infrastructure.html">Infrastructres</a></li>
+                              <li><a class="dropdown-item" href="company-policy.html">Company Policies</a></li>
+                              <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+                            </ul>
+                          </div>
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+                              <li><a class="dropdown-item" href="Borewell Submersible.html">Borewell Submersible <br> Pumps</a></li>
+                              <li><a class="dropdown-item" href="Openwell Submersible.html">Openwell Submersible <br> Pumps</a></li>
+                              <li><a class="dropdown-item" href="Centrifugal Monoblock.html">Centrifugal Monoblock <br> Pumps</a></li>
+                              <li><a class="dropdown-item" href="Energy Efficent-Induction.html">Energy Efficent-Induction <br> Mototrs</a></li>
+                              <li><a class="dropdown-item" href="Centrifugal Regenerative.html">Centrifugal Regenerative <br> Self Priming Pumps</a></li>
+                              <li><a class="dropdown-item" href="Solar Pumping System.html">Solar Pumping System</a></li>
+                            </ul>
+                          </div>
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Applications
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Agriculture.html">Agriculture</a></li>
+                              <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                              <li><a class="dropdown-item" href="Domestic&residental.html">Domestic / Residental</a></li>
+                              <li><a class="dropdown-item" href="Industrial.html">Industrial</a></li>
+                              <li><a class="dropdown-item" href="Solar.html">Solar</a></li>
+                            </ul>
+                          </div>
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Career
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Career.html">Career</a></li>
+                              <li><a class="dropdown-item" href="Job-openings.html">Job Openings</a></li>
+                              <li><a class="dropdown-item" href="Life-at-varuna.html">Life At Varuna</a></li>
+                            </ul>
+                          </div>
+                
+                
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Media
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Media.html">Media</a></li>
+                              <li><a class="dropdown-item" href="Events.html">Events</a></li>
+                              <li><a class="dropdown-item" href="News.html">News</a></li>
+                              <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            </ul>
+                          </div>
+                
+                
+                        <p class="menu">
+                            <a href="csr.html" class="menu-select">CSR</a>
+                        </p>
+                
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Contact
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="Address.html">Addresses</a></li>
+                              <li><a class="dropdown-item" href="Service-center.html">Service Center</a></li>
+                              <li><a class="dropdown-item" href="Complaint-form.html">Complaint Form</a></li>
+                              <li><a class="dropdown-item" href="Warranty-registraion.html">Warranty Registration</a></li>
+                              <li><a class="dropdown-item" href="Write-to-us.html">Write To Us</a></li>
+                            </ul>
+                          </div>
+                       </div>
+                
+                       <div class="shop-cart">
+                        <p class="s-c"><a href="" style="text-decoration: none; color: red;">Shop</a></p>
+                        <p class="s-c"><a href="addtocart.html" style="text-decoration: none; color: red;">Add to Cart</a></p>
+                        </div>
+                
+                        <!-- <select name="menu" class="menu-select">
+                            <option value="contact"><a href="contact.html">Contact</a></option>
+                        </select> -->
+                
+                
+                    </nav>
+                
+                    <div id="reg-log">
+                      <p class="sign"><a href="suggestion.html" style="text-decoration: none; color: red;">Suggestion</a></p>
+                      <p class="sign"><a href="login.html" style="text-decoration: none; color: red;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </section>
+
+    <!-- section ends here -->
+
+
+    <main>
+
+        <div style="background-color: grey; width: 100vw; height: 250px; background-size: contain; opacity: 0.8;">
+            <h3 style="color: white; text-align: center;padding-top: 90px;">
+                Addresses
+            </h3>
+            <div style="color: white; text-align: center; font-size: 20px; font-weight: 500;"><a href="index.html"
+                    style="color: white; text-decoration: none; text-align: center;">Home</a> | <a href="Contact.html"
+                    style="color: white; text-decoration: none; text-align: center;">Contact
+                </a> | <a href="Address.html"
+                    style="color: white; text-decoration: none; text-align: center;">Addresses</a></div>
+        </div>
+
+
+        <div style="margin-left: 20px; margin-top: 40px;">
+            <h4>Head <span style="color: red;">Office</span></h4>
+            <div style="display: flex;">
+                <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                </h4>
+            </div>
+            <p style="margin-left: 25px;">
+                Acidwala Estate, Nagarwel Hanuman Road, Amraiwadi,<br>
+                Ahmedabad, Gujarat, India <br>
+                Pin Code- 380026
+            </p>
+            <p style="margin-left: 25px;">
+                CIN: U17110GJ1981PTC004263
+            </p>
+            <p style="margin-left: 25px;">
+                Toll Free - 1800 258 2565 <br>
+                Mobile - +91- 79- 22777485/487 <br>
+                Email ID - crm@lgmindia.com <br>
+                Website - jds.hodemoserver.in <br>
+            </p>
+
+        </div>
+        <br>
+
+        <div style="margin-left: 20px; margin-top: 40px;">
+            <h4>Branch <span style="color: red;">Address</span></h4>
+        </div>
+
+        <br>
+
+        <div class="address1">
+            <div class="address1-part" style="background-color: transparent;"> <!--1st-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Plot.No.426, At-Koradakanta,Po- <br>Budheswari, Bhubaneswar - 752101
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 7894405574 <br>
+                    Email : Bhubaneswar@Lgmindia.Com
+                </p>
+            </div>
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--2nd-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Survey No. 6/2, Makali,Opp. M/s Himalaya <br>Drug Co.,Tumkur Road,BANGALORE <br>INDIA KARNATAKA
+                    562123
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 09880892180 <br>
+                    Email : kcfabangalore@lgmindia.com
+                </p>
+            </div>
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--3rd-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    43-C, Mangal Nagar, A.B. Road, Near Rajiv <br>Gandhi Chauraha, Indore (Madhya <br>Pradesh),452014
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 8719090168<br>
+                    Email : Indore@Lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--4th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    141, State Bank Of India Colony, Cherital <br>Ward, Nr, Narmada Nursery, School,<br> Ukhari
+                    Tiraha,Baldevbag, Jabalpur <br>- 482002
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 8719090180<br>
+                    Email : Jabalpur@Lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--5th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    C-60, Road No 1C, Vishwakarma Industrial <br>Area, Jaipur, Rajasthan - 302013
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 0141-6450346 / 4109290<br>
+                    Email : Jaipur@Lgmindia.Com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--6th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Plot NO. 39, Block-I,Scheme- Vyapar <br>Nagar / Ispat Nagar, KANPUR NAGAR, <br>, UttarPradesh -
+                    208020
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 0512-2600630<br>
+                    Email : Kanpur@Lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--7th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Ever Bright WareHouse, NH-6, Chamrail, <br>Kona High Road,Howarah - 711114
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 9748421774<br>
+                    Email : Kolkata@Lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--8th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Plot no 21 Nagrik Gruh Nirman Sahakari <br>Sanstha , Khadgaon Road Wadi, Nagpur <br>- 440023
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 0712 – 6450119<br>
+                    Email : Nagpur@Lgmindia.Com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--9th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Aditya Market, Plot No.- 486, Jakariyapur, <br>Near Krishna Niketan School, Patna <br>- 800007
+                    (Bihar)
+                </p>
+                <p style="margin-left: 25px;">
+                    Mobile no : 9709999743 ,<br>
+                    Ph no : 0612-2344458 ,<br>
+                    Email : Patna@Lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--10th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    C/O DEVIKA STAR, MOHINI DWAR, NR <br>ABHINANDAN PALACE,RING ROAD NO.1, <br>KUSHALPUR CHOWK, RAIPUR
+                    (C.G) <br>-
+                    492001
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 0771-2241175<br>
+                    Email : Raipur@Lgmindia.Com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--11th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    0 - GODAM N JARNAIL ENCLAVE, <br>ZIRAKPUR, MOHALI, PUNJAB - 140603
+                </p>
+                <p style="margin-left: 25px;">
+                    Email : Zirakpur@Lgmindia.Com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--12th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Gate No. 1335, Wadki taluka Haveli,Pune <br>- 412308,Maharahstra
+                </p>
+                <p style="margin-left: 25px;">
+                    Email : pune@lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--13th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Khatra no. 1161/1162 Saddiq Nagar,Mejar <br>Assaram Tyagi road, Ghaziabad-201001 ,<br>Utter Pradesh
+                </p>
+                <p style="margin-left: 25px;">
+                    Email : ghaziabad@lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--14th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    C/o Quality Coke Industries, Betkuchi, <br>Lokhara, Guwahati - 781034
+
+                </p>
+                <p style="margin-left: 25px;">
+                    Email : Raipur@Lgmindia.com<br>
+                    Email : northeasternagency@gmail.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--15th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    251/D Transport Nagar, Block -A, <br>BALICHA, Udaipur - 313001, Rajasthan.
+                </p>
+                <p style="margin-left: 25px;">
+                    Email : Jaipur@Lgmindia.com
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--16th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Acidwala Estate, Nagarwel Hanuman <br>Road, Amraiwadi, Ahmedabad, Gujarat <br>380026.
+                </p>
+                <p style="margin-left: 25px;">
+                    CIN: U17110GJ1981PTC004263<br>
+                    Toll Free - 1800 258 2565<br>
+                    Mobile - +91- 79- 22777485/487
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--17th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">La-Gajjar Machineries Pvt. Ltd
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Saparom Nayasarai Ring Road, Near <br>lalgutwa Breeze, P. S Nagri, Ranchi, <br>Jharkhand - 835303
+                </p>
+                <p style="margin-left: 25px;">
+                    Phone : 0651-6457477<br>
+                    Email : Ranchi@Lgmindia.Com
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div style="margin-left: 20px; margin-top: 40px;">
+            <h4>Factory <span style="color: red;">Address</span></h4>
+        </div>
+
+        <br>
+
+
+
+
+        <div class="address1">
+            <div class="address1-part" style="background-color: transparent;"> <!--1st-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">
+                        La-Gajjar Machineries Pvt. Ltd. <br>(SS Division).
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Acidwala Estate, Opp Sukhrampura Post <br>Office Nagarwel Hanuman Road <br>Amraiwadi, Ahmedabad
+                </p>
+            </div>
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--2nd-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">
+                        La-Gajjar Machineries Pvt. Ltd. <br>(Agri Division)
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    Texprint House, Chakudia Mahadev Road, <br>Rakhiyal, Ahmedabad .
+                </p>
+            </div>
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--3rd-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">
+                        La-Gajjar Machineries Pvt. Ltd. <br>(Domestic Division)
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    143, Ajod Dairy, Gomtipur Darwaja, <br>Sukhramnagar, Ahmedabad
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--4th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">
+                        La-Gajjar Machineries Pvt. Ltd. <br>(Pump Division)
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    135, Maruti Complex, Rakhiyal, <br>Ahmedabad
+                </p>
+            </div>
+
+
+
+            <div class="address1-part" style="background-color: transparent;"> <!--5th-->
+                <div style="display: flex;">
+                    <i class="fa-solid fa-location-dot" style="color: red; margin-top: 5px; font-size: 20px;"></i>
+                    <h4 style="margin-left: 10px;">
+                        La-Gajjar Machineries Pvt. Ltd. <br>(CMB Division)
+                    </h4>
+                </div>
+                <p style="margin-left: 25px;">
+                    4, Shrinath Estate, B/H Amba Estate, <br>Navneet Prakashan Road, <br>Rakhiyal Ahmedabad.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer style="margin-top: 10px;">
+
+        <div class="footer-part">
+
+            <div class="footer-5div">
+
+                <div class="footer-5things" style="background-color: transparent;">
+                    <h4>Quick Links</h4>
+                    <a href="index.html" class="footertxt">Home</a>
+                    <a href="about-varuna.html" class="footertxt">About Varuna</a>
+                    <a href="Career.html" class="footertxt">Career</a>
+                    <a href="Contact.html" class="footertxt">Contact</a>
+                    <a href="csr.html" class="footertxt">CSR</a>
+                </div>
+
+
+                <div class="footer-5things" style="background-color: transparent;">
+                    <h4>Products</h4>
+                    <a href="Energy Efficent-Induction.html" class="footertxt">Induction Motors</a>
+                    <a href="Borewell Submersible.html" class="footertxt">Submersible Pupms</a>
+                    <a href="Centrifugal Monoblock.html" class="footertxt">Monoblock Pumps</a>
+                    <a href="Centrifugal Regenerative.html" class="footertxt">Self-Priming Pumps</a>
+                    <a href="Solar Pumping System.html" class="footertxt">Solar Pumps</a>
+                </div>
+
+                <div class="footer-5things" style="background-color: transparent;">
+                    <h4>Application</h4>
+                    <a href="Agriculture.html" class="footertxt">Agriculture</a>
+                    <a href="Commercial.html" class="footertxt">Commercial</a>
+                    <a href="Domestic&residental.html" class="footertxt">Domestic / Residental</a>
+                    <a href="Industrial.html" class="footertxt">Industrial</a>
+                    <a href="Solar.html" class="footertxt">Solar</a>
+                </div>
+
+                <div class="footer-5things" style="background-color: transparent;">
+                    <h4>Media</h4>
+                    <a href="Events.html" class="footertxt">Events</a>
+                    <a href="News.html" class="footertxt">News</a>
+                    <a href="Gallery.html" class="footertxt">Gallery</a>
+                </div>
+
+
+                <div class="footer-5things" style="background-color: transparent;">
+                    <h4>Contact</h4>
+
+                    <p>La-Gajjar Machineries Pvt. Ltd.
+                        CIN :: U17110GJ1981PTC004263
+                    </p>
+
+                    <p>Acidwala estate, Nagarwel Hanuman Road, Amraiwadi, Ahmedabad - 380 026 Gujarat. (INDIA)
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer2">
+
+            <div class="footer-lastsection" style="background-color: transparent;">
+                <p style="padding-left: 25px;">Toll free</p>
+                <i class="fa-solid fa-phone" style="color: red;"></i> <span style="color: red;">1800 258 2565
+                </span>
+            </div>
+
+
+            <div class="footer-lastsection" style="background-color: transparent;">
+                <p style="padding-left: 25px;">Contact</p>
+                <i class="fa-solid fa-phone" style="color: red;"></i> <span style="color: red;">+91-79-22777485 / 487
+                </span>
+            </div>
+
+
+            <div class="footer-lastsection" style="background-color: transparent;">
+                <p style="padding-left: 25px;">Mail us</p>
+                <i class="fa-regular fa-envelope" style="color: red;"></i> <span style="color: red;">crm@lgmindia.com
+                </span>
+            </div>
+
+
+            <div class="footer-lastsection" style="background-color: transparent;">
+                <i class="fa-brands fa-facebook-f" id="footer-icons"></i>
+                <i class="fa-brands fa-linkedin-in" id="footer-icons"></i>
+                <a href="https://www.instagram.com/varunaelectric?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    style="color: black;"><i class="fa-brands fa-instagram" id="footer-icons"></i></a>
+                <a href="https://youtube.com/@varunapumps?si=RJ2O2EUKYH3WRSbz" style="color: black;"><i
+                        class="fa-brands fa-youtube" id="footer-icons"></i></a>
+            </div>
+
+
+        </div>
+
+        <div style="height: 100px;">
+            <p style="padding-left: 40px; padding-top: 30px;">Copyright © 2024 La-Gajjar Machineries Pvt.Ltd. All Rights
+                reserved.</p>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+    <div id="back-top">
+        <a href="#"><i class="fa-solid fa-chevron-up" style="font-size: 15px; color: white;"></i></a>
+    </div>
+
+
+
+</body>
+
+</html>
