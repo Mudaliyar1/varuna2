@@ -1182,7 +1182,7 @@ footer {
     #varuna-img{
         width: 250px;
         height: 100px;
-        background-image: url("../img/main-logo.png");
+        background-image: url("public/img/main-logo.png");
         background-size: contain;
         background-repeat: no-repeat;
         margin-left: 150px;
