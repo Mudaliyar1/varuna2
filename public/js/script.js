@@ -25,7 +25,7 @@ gsap.from('#body2-txt #body-item1',{
     scrollTrigger:{
         trigger:'#body2-txt #body-item1',
         scroller:'body',
-        markers:true,
+        // markers:true,
         start:'top 90%',
         end:'top 70%',
         scrub:1,
@@ -39,7 +39,7 @@ gsap.from('#body2-txt #body-item2',{
     scrollTrigger:{
         trigger:'#body2-txt #body-item1',
         scroller:'body',
-        markers:true,
+        // markers:true,
         start:'top 90%',
         end:'top 90%',
         scrub:1,
@@ -51,7 +51,7 @@ gsap.from('#body2-txt #body-item3',{
     scrollTrigger:{
         trigger:'#body2-txt #body-item1',
         scroller:'body',
-        markers:true,
+        // markers:true,
         start:'top 110%',
         end:'top 100%',
         scrub:1,
@@ -63,7 +63,7 @@ gsap.from('#body2-txt #body-item4',{
     scrollTrigger:{
         trigger:'#body2-txt #body-item1',
         scroller:'body',
-        markers:true,
+        // markers:true,
         start:'top 110%',
         end:'top 100%',
         scrub:1,
