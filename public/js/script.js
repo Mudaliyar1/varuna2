@@ -211,14 +211,13 @@ mainPageAnim();
 function footerAnim() {
     var tl = gsap.timeline();
 
-    tl.to(".footer", {
-        x: "0%",
+    tl.from(".footer", {
+        x: "200%",
         duration: 2,
-        opacity: 1,
         scrollTrigger: {
             trigger: ".footer",
             scroller: "body",
-            // markers:true,
+            markers:true,
             start: "top 50%",
             end: "top 100%",
             scrub: 2
@@ -227,7 +226,7 @@ function footerAnim() {
 
 
 
-    gsap.from(".footer-5things a", {
+    tl.from(".footer-5things a", {
         x: "-1000%",
         duration: 1,
         opacity: 0,
