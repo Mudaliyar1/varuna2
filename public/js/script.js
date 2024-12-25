@@ -219,8 +219,8 @@ function footerAnim() {
             trigger: ".footer",
             scroller: "body",
             // markers:true,
-            start: "top 90%",
-            end: "top 90%",
+            start: "top 50%",
+            end: "top 100%",
             scrub: 2
         }
     });
@@ -229,9 +229,9 @@ function footerAnim() {
 
     gsap.from(".footer-5things a", {
         x: "-1000%",
-        duration: 2,
+        duration: 1,
         opacity: 0,
-        stagger: 1,
+        stagger: 0.3,
         scrollTrigger: {
             trigger: ".footer-5things",
             scroller: "body",
