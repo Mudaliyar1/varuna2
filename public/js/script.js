@@ -217,7 +217,7 @@ function footerAnim() {
         scrollTrigger: {
             trigger: ".footer",
             scroller: "body",
-            markers:true,
+            // markers:true,
             start: "top 90%",
             end: "top 50%",
             scrub: 2
