@@ -79,7 +79,7 @@ tl.from("#three-box .three-divbox",{
     scrollTrigger:{
         trigger:"#three-box",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 60%",
         end:"top 60%",
         scrub:2,
