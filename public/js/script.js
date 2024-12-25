@@ -42,7 +42,8 @@ headerAnim();
 
 
 
-var tl=gsap.timeline();
+function mainPageAnim(){
+    var tl=gsap.timeline();
 
 
 tl.from("#body-txt #first-txt",{
@@ -164,3 +165,81 @@ gsap.from("#body-2img .five",{
         scrub:4
     }
 })
+
+gsap.from("#body4-3txt .body4-imgtxt img",{
+    duration:0.59,
+    x:"-300%",
+    // opacity:0,
+    scale:0,
+    rotateX:"168deg",
+    rotateY:"-288deg",
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#body4-3txt",
+        scroller:"body",
+        // markers:true,
+        start:"top 50%",
+        end:"top 0%",
+        scrub:2
+    }
+})
+gsap.to(".body5-2txt .body5-imgtxt img",{
+    duration:1,
+    x:"0%",
+    opacity:1,
+    scale:1,
+    rotateX:"-360deg",
+    rotateY:"360deg",
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:".body5-2txt",
+        scroller:"body",
+        // markers:true,
+        start:"top 50%",
+        end:"top 0%",
+        scrub:2
+    }
+})
+
+
+}
+
+mainPageAnim();
+
+
+
+var tl=gsap.timeline();
+
+tl.to(".footer",{
+    x:"0%",
+    duration:2,
+    opacity:1,
+    scrollTrigger:{
+        trigger:".footer",
+        scroller:"body",
+        markers:true,
+        start:"top 90%",
+        end:"top 90%",
+        scrub:2
+    }
+});
+
+
+
+gsap.from(".footer-5things a",{
+    x:"-1000%",
+    duration:2,
+    opacity:0,
+    stagger:1,
+    scrollTrigger:{
+        trigger:".footer-5things",
+        scroller:"body",
+        // markers:true,
+        start:"top 50%",
+        end:"top 100%",
+        scrub:2
+    }
+});
+
+
+
