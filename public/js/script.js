@@ -218,7 +218,7 @@ function footerAnim() {
             trigger: ".footer",
             scroller: "body",
             markers:true,
-            start: "top 50%",
+            start: "top 90%",
             end: "top 50%",
             scrub: 2
         }
@@ -235,7 +235,7 @@ function footerAnim() {
             trigger: ".footer-5things",
             scroller: "body",
             // markers:true,
-            start: "top 60%",
+            start: "top 90%",
             end: "top 50%",
             scrub: 1
         }
