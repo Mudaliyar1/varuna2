@@ -243,4 +243,4 @@ function footerAnim() {
 
 }
 
-footerAnim();
+// footerAnim();
