@@ -96,7 +96,7 @@ gsap.from("#body-2img .one",{
     scrollTrigger:{
         trigger:"#body-2img",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 50%",
         end:"top 55%",
         scrub:4
