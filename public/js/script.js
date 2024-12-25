@@ -142,7 +142,7 @@ gsap.from("#body-2img .four",{
     scrollTrigger:{
         trigger:"#body-2img",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 50%",
         end:"top 55%",
         scrub:4
@@ -158,7 +158,7 @@ gsap.from("#body-2img .five",{
     scrollTrigger:{
         trigger:"#body-2img",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 50%",
         end:"top 55%",
         scrub:4
