@@ -212,14 +212,14 @@ function footerAnim() {
     var tl = gsap.timeline();
 
     tl.from(".footer", {
-        x: "200%",
+        x: "-200%",
         duration: 2,
         scrollTrigger: {
             trigger: ".footer",
             scroller: "body",
             markers:true,
             start: "top 50%",
-            end: "top 100%",
+            end: "top 50%",
             scrub: 2
         }
     });
@@ -227,17 +227,17 @@ function footerAnim() {
 
 
     tl.from(".footer-5things a", {
-        y: "-200%",
+        y:"-100%",
         duration: 1,
         opacity: 0,
-        stagger: 0.3,
+        stagger: -0.9,
         scrollTrigger: {
             trigger: ".footer-5things",
             scroller: "body",
             // markers:true,
-            start: "top 50%",
-            end: "top 100%",
-            scrub: 2
+            start: "top 60%",
+            end: "top 50%",
+            scrub: 1
         }
     });
 
