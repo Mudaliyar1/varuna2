@@ -1,71 +1,88 @@
+function headerAnim(){
+    var tl=gsap.timeline();
+
+tl.from("#globe #nav-global",{
+    y:-80,
+    duration:0.38,
+    opacity:0
+})
+tl.from("#nav-location #nav-img",{
+    y:-40,
+    duration:0.28,
+    opacity:0
+})
+tl.from("#nav-service",{
+    y:-40,
+    duration:0.58,
+    opacity:0
+})
+
+tl.from("#varuna-logo",{
+    y:-20,
+    scale:0,
+    duration:0.58,
+    opacity:0
+},"-=.80")
+
+
+tl.from("#contact-icon",{
+    x:80,
+    duration:0.58,
+    opacity:0
+},"-=1")
+tl.from("#search-icon",{
+    x:-80,
+    duration:0.58,
+    opacity:0
+},"-=1")
+
+}
+
+headerAnim();
+
+
+
 var tl=gsap.timeline();
 
 
-gsap.from('#body-txt #rd3-txt',{
-    x:'-70%',
-    duration:0.4,
+tl.from("#body-txt #first-txt",{
+    x:-80,
     opacity:0,
-    scrollTrigger:{
-        trigger:'#body-txt #rd3-txt',
-        scroller:'body',
-        // markers:true,
-        start:'top 80%',
-        end:'top 70%',
-        scrub:2
-    }
-});
-
-
-
-gsap.from('#body2-txt #body-item1',{
-    y:-300,
-    rotateX:'150deg',
-    rotateY:'200deg',
+    duration:0.98
+})
+tl.from("#body-txt #nd2-txt",{
+    x:-80,
     opacity:0,
+    duration:0.58
+},"-=0.30")
+
+gsap.from("#body-txt #rd3-txt",{
+    x:-80,
+    opacity:0,
+    duration:0.58,
     scrollTrigger:{
-        trigger:'#body2-txt #body-item1',
-        scroller:'body',
+        trigger:"#body-txt",
+        scroller:"body",
         // markers:true,
-        start:'top 90%',
-        end:'top 70%',
-        scrub:1,
+        start:"top 40%",
+        end:"top 0%",
+        scrub:1
     }
 })
-gsap.from('#body2-txt #body-item2',{
-    x:-300,
+
+
+tl.from("#three-box .three-divbox",{
+    y:-200,
     opacity:0,
-    rotateX:'150deg',
-    rotateY:'200deg',
+    duration:1,
+    stagger:1,
     scrollTrigger:{
-        trigger:'#body2-txt #body-item1',
-        scroller:'body',
-        // markers:true,
-        start:'top 90%',
-        end:'top 90%',
-        scrub:1,
-    }
-})
-gsap.from('#body2-txt #body-item3',{
-    x:300,
-    opacity:0,
-    scrollTrigger:{
-        trigger:'#body2-txt #body-item1',
-        scroller:'body',
-        // markers:true,
-        start:'top 110%',
-        end:'top 100%',
-        scrub:1,
-    }
-})
-gsap.from('#body2-txt #body-item4',{
-    y:800,
-    opacity:0,
-    scrollTrigger:{
-        trigger:'#body2-txt #body-item1',
-        scroller:'body',
-        // markers:true,
-        start:'top 110%',
-        end:'top 100%',
-        scrub:1,
+        trigger:"#three-box",
+        scroller:"body",
+        markers:true,
+        start:"top 60%",
+        end:"top 60%",
+        scrub:2,
+        ease:"bounce.out"
     }
 })
