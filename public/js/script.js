@@ -227,7 +227,7 @@ function footerAnim() {
 
 
     tl.from(".footer-5things a", {
-        x: "-1000%",
+        y: "-200%",
         duration: 1,
         opacity: 0,
         stagger: 0.3,
