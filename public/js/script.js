@@ -86,3 +86,81 @@ tl.from("#three-box .three-divbox",{
         ease:"bounce.out"
     }
 })
+
+gsap.from("#body-2img .one",{
+    x:"-150%",
+    duration:1.7,
+    scale:0,
+    rotateX:"-190deg",
+    rotateY:"330deg",
+    scrollTrigger:{
+        trigger:"#body-2img",
+        scroller:"body",
+        markers:true,
+        start:"top 50%",
+        end:"top 55%",
+        scrub:4
+    }
+})
+gsap.from("#body-2img .two",{
+    y:"-250%",
+    duration:1.7,
+    scale:0,
+    rotate:"265deg",
+    rotateX:"-156deg",
+    rotateY:"-260deg",
+    scrollTrigger:{
+        trigger:"#body-2img",
+        scroller:"body",
+        // markers:true,
+        start:"top 50%",
+        end:"top 55%",
+        scrub:4
+    }
+})
+gsap.from("#body-2img .three",{
+    y:"-250%",
+    duration:4,
+    scale:0,
+    rotateX:"360deg",
+    // rotateY:"260deg",
+    scrollTrigger:{
+        trigger:"#body-2img",
+        scroller:"body",
+        // markers:true,
+        start:"top 50%",
+        end:"top 55%",
+        scrub:4
+    }
+})
+gsap.from("#body-2img .four",{
+    y:"-250%",
+    duration:4,
+    scale:0,
+    rotateX:"156deg",
+    rotateY:"260deg",
+    scrollTrigger:{
+        trigger:"#body-2img",
+        scroller:"body",
+        markers:true,
+        start:"top 50%",
+        end:"top 55%",
+        scrub:4
+    }
+})
+
+gsap.from("#body-2img .five",{
+    x:"150%",
+    duration:1.7,
+    scale:0,
+    rotateX:"190deg",
+    rotateY:"330deg",
+    scrollTrigger:{
+        trigger:"#body-2img",
+        scroller:"body",
+        markers:true,
+        start:"top 50%",
+        end:"top 55%",
+        scrub:4
+    }
+})
